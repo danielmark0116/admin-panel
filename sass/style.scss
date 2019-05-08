@@ -1,3 +1,8 @@
-body {
-    background-color: red;
-}
+// IMPORTS
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "layout";
+// @import "components/layout";
+// @import "section /layout";
+// @import "pages /layout";
