@@ -8,10 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    
-<h2>navbar</h2>
-<h3>index content</h3>
-<h4>update</h4>
-
+    {% block content %}
+    {% endblock content %}
 </body>
 </html>
