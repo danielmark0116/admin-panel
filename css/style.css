@@ -1,7 +1,12 @@
-@font-face {
-  font-family: "Glyphter";
-  src: url("Harabara.eot");
-  src: url("../vendor/fonts/Glyphter.woff") format("woff"), url("../vendor/fonts/Glyphter.svg") format("svg");
+@keyframes menu-item-slide-out {
+  0% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(155px);
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -696,6 +701,134 @@ template {
   margin-left: 91.6%;
 }
 
+@font-face {
+  font-family: "Glyphter";
+  src: url("Harabara.eot");
+  src: url("../vendor/fonts/Glyphter.woff") format("woff"), url("../vendor/fonts/Glyphter.svg") format("svg");
+}
+
+.icon-arrow-down:before {
+  content: '\0041';
+}
+
+.icon-arrow-down-small:before {
+  content: '\0042';
+}
+
+.icon-arrow-left:before {
+  content: '\0043';
+}
+
+.icon-arrow-right:before {
+  content: '\0044';
+}
+
+.icon-arrow-up:before {
+  content: '\0045';
+}
+
+.icon-arrow-up-small:before {
+  content: '\0046';
+}
+
+.icon-banners:before {
+  content: '\0047';
+}
+
+.icon-calendar:before {
+  content: '\0048';
+}
+
+.icon-close:before {
+  content: '\0049';
+}
+
+.icon-details:before {
+  content: '\004a';
+}
+
+.icon-general:before {
+  content: '\004b';
+}
+
+.icon-links:before {
+  content: '\004c';
+}
+
+.icon-login:before {
+  content: '\004d';
+}
+
+.icon-message:before {
+  content: '\004e';
+}
+
+.icon-negative:before {
+  content: '\004f';
+}
+
+.icon-notification:before {
+  content: '\0050';
+}
+
+.icon-password:before {
+  content: '\0051';
+}
+
+.icon-payout:before {
+  content: '\0052';
+}
+
+.icon-personaldata:before {
+  content: '\0053';
+}
+
+.icon-positive:before {
+  content: '\0054';
+}
+
+.icon-postback:before {
+  content: '\0055';
+}
+
+.icon-profile:before {
+  content: '\0056';
+}
+
+.icon-quit:before {
+  content: '\0057';
+}
+
+.icon-refresh:before {
+  content: '\0058';
+}
+
+.icon-show:before {
+  content: '\0059';
+}
+
+.icon-trash:before {
+  content: '\005a';
+}
+
+.icon-url:before {
+  content: '\0061';
+}
+
+.icon-wallet:before {
+  content: '\0062';
+}
+
+[class*='icon-']:before {
+  display: inline-block;
+  font-family: 'Glyphter';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 main.wrapper {
   display: block;
   margin-left: 276px;
@@ -758,10 +891,6 @@ main.wrapper.active {
   width: 100%;
   border-bottom: 0.5px solid #333333;
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.25);
-}
-
-.side-bar ul {
-  list-style-type: none;
 }
 
 .side-bar.active {
@@ -836,6 +965,78 @@ main.wrapper.active {
 
 .hamburger-ico div:first-child {
   margin-top: 6px;
+}
+
+.side-bar-menu {
+  width: 100%;
+  margin: 0 0;
+  padding: 0 0;
+  list-style-type: none;
+}
+
+.side-bar-menu li {
+  width: 100%;
+}
+
+.side-bar-menu-item {
+  margin: 0 0;
+  padding: 0 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 75px;
+  background-color: inherit;
+  color: #979797;
+  transition: 0.3s ease-out;
+}
+
+.side-bar-menu-item:hover {
+  background-color: #333333;
+  color: #fff;
+}
+
+.side-bar-menu-item.hide p {
+  opacity: 0;
+}
+
+.side-bar-menu-item.hide .side-bar-ico {
+  transform: translateX(155px);
+}
+
+.side-bar-menu p {
+  width: 65%;
+  line-height: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 1rem;
+  margin: 0 0;
+  color: inherit;
+}
+
+.side-bar-ico {
+  width: 35%;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border-left: 2px solid #f58220;
+  transition: 0.5s ease-out;
+}
+
+.side-bar-ico div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  width: 60%;
+  height: auto;
+  font-size: 150%;
+  color: inherit;
 }
 
 body {

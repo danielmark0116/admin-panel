@@ -11,14 +11,17 @@
             </div>
         </div>
     </div>
-    <ul>
-        <li>Menu Item1</li>
-        <li>Menu Item2</li>
-        <li>Menu Item3</li>
-        <li>Menu Item1</li>
-        <li>Menu Item2</li>
-        <li>Menu Item3</li>
-        <li>Menu Item1</li>
+    <ul class="side-bar-menu">
+        <li>
+            <a href="/" class="side-bar-menu-item">
+                <div class="side-bar-ico">
+                    <div class="icon-general"></div>
+                </div>
+                <p>
+                    LINK
+                </p>
+            </a>
+        </li>
     </ul>
 </nav>
 

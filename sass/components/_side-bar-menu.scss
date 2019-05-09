@@ -1,0 +1,65 @@
+.side-bar-menu {
+    width: 100%;
+    margin: 0 0;
+    padding: 0 0;
+    list-style-type: none;
+
+    & li {
+        width: 100%;
+    }
+
+    &-item {
+        margin: 0 0;
+        padding: 0 0;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        height: 75px;
+        background-color: inherit;
+        color: $light-1;
+        @include fade;
+
+        &:hover {
+            background-color: $grey;
+            color: $white;
+        }
+
+        &.hide p {
+            opacity: 0;
+        }
+
+        &.hide .side-bar-ico {
+
+            transform: translateX(155px);
+        }
+    }
+
+    p {
+        width: 65%;
+        line-height: 100%;
+        align-self: center;
+        padding: 0 1rem;
+        margin: 0 0;
+        color: inherit;
+        // @include fade;
+    }
+}
+
+.side-bar-ico {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border-left: 2px solid $orange;
+    @include fade-medium;
+
+    & div {
+        align-self: center;
+        text-align: center;
+        width: 60%;
+        height: auto;
+        font-size: 150%;
+        color: inherit;
+        // @include fade;
+    }
+}
