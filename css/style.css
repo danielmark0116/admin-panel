@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Glyphter";
-  src: url("css/fonts/Harabara.eot");
-  src: url("css/fonts/Harabara.woff") format("woff"), url("css/fonts/Harabara.otf") format("opentype"), url("css/fonts/Harabara.svg#filename") format("svg");
+  src: url("Harabara.eot");
+  src: url("../vendor/fonts/Glyphter.woff") format("woff"), url("../vendor/fonts/Glyphter.svg") format("svg");
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

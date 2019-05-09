@@ -2,11 +2,10 @@
 
 @font-face {
     font-family: "Glyphter";
-    src: url("css/fonts/Harabara.eot");
+    src: url("Harabara.eot");
     src:
-        url("css/fonts/Harabara.woff") format("woff"),
-        url("css/fonts/Harabara.otf") format("opentype"),
-        url("css/fonts/Harabara.svg#filename") format("svg");
+        url("../vendor/fonts/Glyphter.woff") format("woff"),
+        url("../vendor/fonts/Glyphter.svg") format("svg");
 }
 
 
