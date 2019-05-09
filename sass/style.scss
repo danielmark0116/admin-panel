@@ -3,6 +3,14 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
-// @import "components/layout";
+@import "components/navbar";
 // @import "section /layout";
 // @import "pages /layout";
+
+
+
+// GLOBAL SETTINGS
+
+body {
+    font-family: $sans-serif, sans-serif;
+}

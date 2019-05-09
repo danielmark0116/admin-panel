@@ -1,0 +1,8 @@
+main.wrapper {
+    display: block;
+    margin-left: $side-bar-offset;
+    background-color: blue;
+    color: grey;
+    padding: 1rem 1rem;
+    margin: 1rem 1rem 1rem $side-bar-offset;
+}

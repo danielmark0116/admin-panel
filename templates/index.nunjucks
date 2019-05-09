@@ -1,7 +1,29 @@
 {% extends "base/layout.nunjucks" %}
 
-{% block content %}
+{% block navbar %}
 {% include "partials/navbar.nunjucks" %}
-<h3>index content</h3>
-<h4>update</h4>
+{% endblock navbar %}
+
+{% block content %}
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus culpa quaerat laboriosam illum quae esse repellendus asperiores. Non assumenda esse quae doloribus, facilis animi explicabo labore temporibus perspiciatis hic.
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus culpa quaerat laboriosam illum quae esse repellendus asperiores. Non assumenda esse quae doloribus, facilis animi explicabo labore temporibus perspiciatis hic.
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus culpa quaerat laboriosam illum quae esse repellendus asperiores. Non assumenda esse quae doloribus, facilis animi explicabo labore temporibus perspiciatis hic.
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus culpa quaerat laboriosam illum quae esse repellendus asperiores. Non assumenda esse quae doloribus, facilis animi explicabo labore temporibus perspiciatis hic.
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus culpa quaerat laboriosam illum quae esse repellendus asperiores. Non assumenda esse quae doloribus, facilis animi explicabo labore temporibus perspiciatis hic.
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus culpa quaerat laboriosam illum quae esse repellendus asperiores. Non assumenda esse quae doloribus, facilis animi explicabo labore temporibus perspiciatis hic.
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus culpa quaerat laboriosam illum quae esse repellendus asperiores. Non assumenda esse quae doloribus, facilis animi explicabo labore temporibus perspiciatis hic.
+</p>
 {% endblock content %}

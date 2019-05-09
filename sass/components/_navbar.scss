@@ -1,0 +1,39 @@
+.side-bar {
+    position: fixed;
+    display: inline;
+    margin: 0 0;
+    padding: 1rem 1rem;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    max-width: 150px;
+    width: 150px;
+    overflow-y: scroll;
+    background-color: red;
+    z-index: 5;
+
+    & ul {
+        list-style-type: none;
+    }
+}
+
+.top-bar {
+    z-index: 6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: yellow;
+    display: flex;
+
+    &-left {
+        flex: 1;
+    }
+
+    &-right {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
