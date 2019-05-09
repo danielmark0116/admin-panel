@@ -1,3 +1,16 @@
+// Glypther Font
+
+@font-face {
+    font-family: "Glyphter";
+    src: url("css/fonts/Harabara.eot");
+    src:
+        url("css/fonts/Harabara.woff") format("woff"),
+        url("css/fonts/Harabara.otf") format("opentype"),
+        url("css/fonts/Harabara.svg#filename") format("svg");
+}
+
+
+
 // COLORS
 $white: #fff;
 $bg: #f5f5f2;

@@ -22,6 +22,11 @@
     &-brand {
         font-family: $brand-font;
         font-size: 30px;
+        @include fade;
+
+        &.hide {
+            visibility: hidden;
+        }
     }
 
     &-header {
@@ -36,7 +41,7 @@
     }
 
     &.active {
-        left: -186px;
+        left: -155px;
     }
 }
 

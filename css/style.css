@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Glyphter";
+  src: url("css/fonts/Harabara.eot");
+  src: url("css/fonts/Harabara.woff") format("woff"), url("css/fonts/Harabara.otf") format("opentype"), url("css/fonts/Harabara.svg#filename") format("svg");
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -700,7 +706,7 @@ main.wrapper {
 }
 
 main.wrapper.active {
-  margin-left: 90px;
+  margin-left: 121px;
 }
 
 .box {
@@ -740,6 +746,11 @@ main.wrapper.active {
 .side-bar-brand {
   font-family: "Lobster";
   font-size: 30px;
+  transition: 0.3s ease-out;
+}
+
+.side-bar-brand.hide {
+  visibility: hidden;
 }
 
 .side-bar-header {
@@ -754,7 +765,7 @@ main.wrapper.active {
 }
 
 .side-bar.active {
-  left: -186px;
+  left: -155px;
 }
 
 .top-bar {
