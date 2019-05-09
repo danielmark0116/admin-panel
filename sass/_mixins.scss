@@ -1,0 +1,30 @@
+@mixin fade {
+    transition: 0.3s ease-out;
+}
+
+@mixin fade-short {
+    transition: 0.1s ease-out;
+}
+
+@mixin fade-long {
+    transition: 0.8s ease-out;
+}
+
+@mixin menu-btn-animation {
+    animation-name: animation-1;
+    animation-duration: 0.3s;
+
+    @keyframes animation-1 {
+        0% {
+            transform: scale(1) rotate(0deg)
+        }
+
+        50% {
+            transform: scale(0.1) rotate(360deg)
+        }
+
+        100% {
+            transform: scale(1) rotate(720deg)
+        }
+    }
+}

@@ -2,8 +2,10 @@
 @import "variables";
 @import "mixins";
 @import "normalize";
+@import "grid";
 @import "layout";
 @import "components/navbar";
+@import "components/buttons";
 // @import "section /layout";
 // @import "pages /layout";
 
@@ -12,5 +14,20 @@
 // GLOBAL SETTINGS
 
 body {
+    background-color: $bg;
     font-family: $sans-serif, sans-serif;
+}
+
+p {
+    color: black;
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:visited {
+        color: inherit;
+    }
 }

@@ -1,4 +1,16 @@
-<nav class="side-bar">
+<nav class="side-bar" id="side-bar">
+    <div class="side-bar-header d-flex align-center">
+        <div class="side-bar-brand flex-item-2 d-flex align-center">
+            <a href="/">Just Do it</a>
+        </div>
+        <div class="side-bar-hamburger flex-item d-flex justify-content-center align-center">
+            <div class="hamburger-ico" id="menu-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
     <ul>
         <li>Menu Item1</li>
         <li>Menu Item2</li>

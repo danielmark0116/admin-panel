@@ -1,0 +1,45 @@
+.hamburger-ico {
+    width: auto;
+    height: auto;
+    padding: 1px 1px;
+    padding: 0 6px;
+    opacity: 0.8;
+    @include fade;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 1;
+        @include fade;
+    }
+
+    &.active {
+        @include fade;
+        transform: rotate(360deg) translateX(15%);
+    }
+
+    &.active div:nth-child(2) {
+        visibility: hidden;
+    }
+
+    &.active div:nth-child(1) {
+        transform-origin: center;
+        transform: rotate(135deg) translateY(-70%) translateX(40%);
+
+    }
+
+    &.active div:nth-child(3) {
+        transform-origin: center;
+        transform: rotate(-135deg) translateY(50%) translateX(35%);
+    }
+
+    & div {
+        width: 30px;
+        height: 3px;
+        margin-bottom: 6px;
+        background-color: $white;
+
+        &:first-child {
+            margin-top: 6px;
+        }
+    }
+}
