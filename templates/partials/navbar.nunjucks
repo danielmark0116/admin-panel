@@ -13,16 +13,105 @@
     </div>
     <ul class="side-bar-menu">
         <li>
-            <a href="/" class="side-bar-menu-item">
-                <div class="side-bar-ico">
-                    <div class="icon-general"></div>
-                </div>
-                <p>
-                    LINK
-                </p>
-            </a>
+            <div class="side-bar-menu-slide">
+                <a href="/" class="side-bar-menu-item">
+                    <div class="side-bar-ico active">
+                        <div class="icon-general"></div>
+                    </div>
+                    <div class="p-slide">
+                        <p>
+                            General
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="side-bar-menu-slide">
+                <a href="/" class="side-bar-menu-item">
+                    <div class="side-bar-ico">
+                        <div class="icon-details"></div>
+                    </div>
+                    <div class="p-slide">
+                        <p>
+                            Details
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="side-bar-menu-slide">
+                <a href="/" class="side-bar-menu-item">
+                    <div class="side-bar-ico">
+                        <div class="icon-links"></div>
+                    </div>
+                    <div class="p-slide">
+                        <p>
+                            Links
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="side-bar-menu-slide">
+                <a href="/" class="side-bar-menu-item">
+                    <div class="side-bar-ico">
+                        <div class="icon-banners"></div>
+                    </div>
+                    <div class="p-slide">
+                        <p>
+                            Banners
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="side-bar-menu-slide">
+                <a href="/" class="side-bar-menu-item">
+                    <div class="side-bar-ico">
+                        <div class="icon-personaldata"></div>
+                    </div>
+                    <div class="p-slide">
+                        <p>
+                            Personal data
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="side-bar-menu-slide">
+                <a href="/" class="side-bar-menu-item">
+                    <div class="side-bar-ico">
+                        <div class="icon-payout"></div>
+                    </div>
+                    <div class="p-slide">
+                        <p>
+                            Payout
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="side-bar-menu-slide">
+                <a href="/" class="side-bar-menu-item">
+                    <div class="side-bar-ico">
+                        <div class="icon-postback"></div>
+                    </div>
+                    <div class="p-slide">
+                        <p>
+                            Postback
+                        </p>
+                    </div>
+                </a>
+            </div>
         </li>
     </ul>
+    <div class="side-bar-separator"></div>
 </nav>
 
 <nav class="top-bar">

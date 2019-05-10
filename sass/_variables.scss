@@ -27,7 +27,9 @@ sans-serif;
 
 // NAVBARS Offset 
 
-$side-bar-offset: 276px;
+$side-bar-width: 200px;
+$side-bar-offset: ($side-bar-width + 20px);
+$side-bar-closed: ($side-bar-width * 0.7);
 
 // FLEX Grid
 

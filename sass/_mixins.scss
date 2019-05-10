@@ -1,3 +1,9 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 @mixin fade {
     transition: 0.3s ease-out;
 }
@@ -14,22 +20,38 @@
     transition: 0.8s ease-out;
 }
 
-@mixin menu-item-slide-out {
-    animation-name: menu-item-slide-out;
-    animation-duration: 0.5s;
-    animation-delay: 0.2s;
-
-
+@mixin menu-item-fade-out {
+    animation-name: menu-item-fade-out;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
 }
 
-@keyframes menu-item-slide-out {
+@mixin menu-item-fade-in {
+    animation-name: menu-item-fade-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes menu-item-fade-out {
+    0% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(100px);
+    }
+}
+
+@keyframes menu-item-fade-in {
     0% {
         opacity: 0;
-        transform: translateX(0px);
+        transform: translate(20px);
     }
 
     100% {
         opacity: 1;
-        transform: translateX(155px);
+        transform: translate(0);
     }
 }

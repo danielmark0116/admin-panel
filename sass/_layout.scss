@@ -8,7 +8,7 @@ main.wrapper {
     @include fade;
 
     &.active {
-        margin-left: ($side-bar-offset - 155px);
+        margin-left: ($side-bar-offset - $side-bar-closed);
     }
 }
 

@@ -1,14 +1,11 @@
 .side-bar {
     position: fixed;
-    display: inline;
-    margin: 0 0;
-    padding: 0 0;
     top: 0;
     left: 0;
     bottom: 0;
     background-color: $dark;
     color: white;
-    width: 250px;
+    width: $side-bar-width;
     overflow-y: scroll;
     z-index: 5;
     box-shadow: 2px 0 10px rgba(black, 0.55);
@@ -21,7 +18,10 @@
 
     &-brand {
         font-family: $brand-font;
-        font-size: 30px;
+        width: auto;
+        padding-left: 1rem;
+        font-size: 25px;
+        // padding-left: 1rem;
         @include fade;
 
         &.hide {
@@ -29,15 +29,29 @@
         }
     }
 
+    &-hamburger {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 40px;
+    }
+
     &-header {
-        padding: 1rem 1rem;
+        padding: 1rem 0;
         width: 100%;
         border-bottom: 0.5px solid $grey;
         box-shadow: 5px 0 10px rgba(black, 0.25);
     }
 
+    &-separator {
+        width: 100%;
+        margin: 1rem 0;
+        padding: 0 0;
+        border-bottom: 1px solid $grey;
+    }
+
     &.active {
-        left: -155px;
+        left: -($side-bar-closed);
     }
 }
 
