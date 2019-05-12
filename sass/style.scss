@@ -21,17 +21,3 @@ body {
     background-color: $bg;
     font-family: $sans-serif, sans-serif;
 }
-
-p {
-    color: black;
-    font-weight: 100;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-
-    &:visited {
-        color: inherit;
-    }
-}

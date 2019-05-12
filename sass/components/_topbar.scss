@@ -7,6 +7,11 @@
         align-items: center;
         border-left: 0.5px solid $light-3;
         padding: 0 2rem;
+        @include fade;
+
+        &:hover {
+            background-color: $bg;
+        }
 
         & p {
             padding-left: 1rem;

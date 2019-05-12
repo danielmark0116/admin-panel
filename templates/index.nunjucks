@@ -12,7 +12,13 @@
         </h1>
     </div>
     <div class="box-inner">
-        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+        <h2>Buttons:</h2>
+        <button class="btn btn-primary">Click me</button>
+        <button class="btn btn-success">Click me</button>
+        <h2>Links:</h2>
+        <a href="" class="link link-small">small link</a>
+        <a href="" class="link link-large">large link</a>
+        <a href="" class="link link-show"></a>
         <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>

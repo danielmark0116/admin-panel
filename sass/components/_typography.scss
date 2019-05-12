@@ -1,7 +1,30 @@
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:visited {
+        color: inherit;
+    }
+}
+
+// PAGE HEADER
 h1 {
     padding: 1rem 1.5rem;
     text-transform: uppercase;
     margin: 0 0;
     font-weight: 500;
     font-size: 18px;
+}
+
+// SECTION HEADER
+h2 {
+    font-weight: 700;
+    font-size: 18px;
+    color: $light-2;
+}
+
+// TEXT
+p {
+    color: black;
+    font-weight: 100;
 }
