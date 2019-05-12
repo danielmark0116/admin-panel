@@ -28,6 +28,8 @@ sans-serif;
 // NAVBARS Offset 
 
 $side-bar-width: 200px;
+$top-bar-height: 60px;
+$top-bar-offset: ($top-bar-height + 20px);
 $side-bar-offset: ($side-bar-width + 20px);
 $side-bar-closed: ($side-bar-width * 0.7);
 

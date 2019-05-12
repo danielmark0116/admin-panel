@@ -3,8 +3,8 @@ main.wrapper {
     margin-left: $side-bar-offset;
     color: grey;
     // width: 100%;
-    padding: 1rem 1rem;
-    margin: 1rem 1rem 1rem $side-bar-offset;
+    padding: 0 1rem 1rem;
+    margin: $top-bar-offset 1rem 1rem $side-bar-offset;
     @include fade;
 
     &.active {
@@ -16,7 +16,7 @@ main.wrapper {
     background-color: $white;
     box-shadow: 0 0 10px rgba(black, 0.15);
     margin: 1rem 0;
-    padding: 1rem 2rem;
+    padding: 0 0;
     @include fade;
 
     &:hover,
@@ -24,4 +24,26 @@ main.wrapper {
     &:focus {
         box-shadow: 0 0 10px rgba(black, 0.25);
     }
+
+    &-inner {
+        padding: 1rem 2rem;
+    }
+}
+
+.title {
+    width: 100%;
+    border-bottom: 0.5px solid $light-3;
+}
+
+.separator {
+    width: 100%;
+    margin: 1rem 0;
+    height: 1px;
+    border-bottom: 0.5px solid $light-3;
+}
+
+.container {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
 }

@@ -119,6 +119,39 @@
         left
     </div>
     <div class="top-bar-right">
-        right
+        <div class="top-bar-menu">
+            <a href="/" class="top-bar-menu-item">
+                <div class="top-bar-menu-ico">
+                    <div class="icon-wallet"></div>
+                </div>
+                <div class="">
+                    <p>
+                        $ 1,500.00
+                    </p>
+                </div>
+            </a>
+            <a href="/" class="top-bar-menu-item">
+                <div class="top-bar-menu-ico">
+                    <div class="icon-notification"></div>
+                </div>
+                
+            </a>
+            <a href="/" class="top-bar-menu-item">
+                <div class="top-bar-menu-ico">
+                    <div class="icon-profile"></div>
+                </div>
+                <div class="">
+                    <p>
+                    
+                        Leonardo DiCaprio
+                    </p>
+                </div>
+            </a>
+            <a href="/" class="top-bar-menu-item">
+                <div class="top-bar-menu-ico">
+                    <div class="icon-quit"></div>
+                </div>
+            </a>
+        </div>
     </div>
 </nav>

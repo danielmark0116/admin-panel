@@ -1,3 +1,15 @@
+.side-bar::-webkit-scrollbar {
+    width: 0 !important
+}
+
+.side-bar {
+    overflow: -moz-scrollbars-none;
+}
+
+.side-bar {
+    -ms-overflow-style: none;
+}
+
 .side-bar {
     position: fixed;
     top: 0;
@@ -39,6 +51,7 @@
     &-header {
         padding: 1rem 0;
         width: 100%;
+        height: $top-bar-height;
         border-bottom: 0.5px solid $grey;
         box-shadow: 5px 0 10px rgba(black, 0.25);
     }
@@ -62,7 +75,11 @@
     left: 0;
     right: 0;
     width: 100vw;
+    height: $top-bar-height;
+    background-color: $white;
     display: flex;
+    border-bottom: 0.5px solid $light-3;
+    box-shadow: 0 0 10px rgba(black, 0.1);
 
     &-left {
         flex: 1;
