@@ -35,7 +35,7 @@ main.wrapper {
 
 .separator {
     width: 100%;
-    margin: 1rem 0;
+    margin: 1rem 0 0;
     height: 1px;
     border-bottom: 0.5px solid $light-3;
 }
@@ -43,6 +43,10 @@ main.wrapper {
 .container {
     width: 100%;
     max-width: 1040px;
+    margin: 0 auto;
+}
+
+.m-auto {
     margin: 0 auto;
 }
 

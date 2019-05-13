@@ -8,6 +8,10 @@
         url("../vendor/fonts/Glyphter.svg") format("svg");
 }
 
+.glyphter {
+    font-family: "Glyphter";
+}
+
 .icon-arrow-down:before {
     content: '\0041';
 }

@@ -60,6 +60,11 @@
         }
     }
 
+    &-small {
+        font-size: 14px;
+        padding: 9px 13.5px;
+    }
+
     &:hover {
         cursor: pointer;
     }

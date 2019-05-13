@@ -12,6 +12,66 @@
         </h1>
     </div>
     <div class="box-inner">
+        <div class="container">
+            <form action="" class="m-auto">
+                <div class="form-group">
+                    <input type="date">
+                    <input type="date">
+                </div>
+                <button class="btn btn-success btn-small icon-refresh"></button>
+            </form>
+        </div>
+    </div>
+    <div class="separator"></div>
+    <div class="box-inner">
+        <p>*links section to be finished</p>
+    </div>
+</div>
+
+<div class="box">
+    <div class="title">
+        <h1>
+            Links
+        </h1>
+    </div>
+    <div class="box-inner">
+        <p>
+            CONTENT
+        </p>
+    </div>
+</div>
+<div class="box">
+    <div class="title">
+        <h1>
+            Details
+        </h1>
+    </div>
+    <div class="box-inner">
+        <p>
+            tabela
+        </p>
+    </div>
+</div>
+<div class="box">
+    <div class="title">
+        <h1>
+            Payout
+        </h1>
+    </div>
+    <div class="box-inner">
+        <p>
+            tabela
+        </p>
+    </div>
+</div>
+
+<div class="box">
+    <div class="title">
+        <h1>
+            General statistics
+        </h1>
+    </div>
+    <div class="box-inner">
         <h2>Buttons:</h2>
         <button class="btn btn-primary">Click me</button>
         <button class="btn btn-success">Click me</button>
@@ -19,6 +79,13 @@
         <a href="" class="link link-small">small link</a>
         <a href="" class="link link-large">large link</a>
         <a href="" class="link link-show"></a>
+    </div>
+    <div class="separator"></div>
+    <div class="box-inner">
+        <h2>Date Period:</h2>
+        <div class="container">
+            cos tam
+        </div>
         <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>

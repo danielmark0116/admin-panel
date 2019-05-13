@@ -735,6 +735,10 @@ template {
   src: url("../vendor/fonts/Glyphter.woff") format("woff"), url("../vendor/fonts/Glyphter.svg") format("svg");
 }
 
+.glyphter {
+  font-family: "Glyphter";
+}
+
 .icon-arrow-down:before {
   content: '\0041';
 }
@@ -901,7 +905,7 @@ main.wrapper.active {
 
 .separator {
   width: 100%;
-  margin: 1rem 0;
+  margin: 1rem 0 0;
   height: 1px;
   border-bottom: 0.5px solid #e3e3e3;
 }
@@ -909,6 +913,10 @@ main.wrapper.active {
 .container {
   width: 100%;
   max-width: 1040px;
+  margin: 0 auto;
+}
+
+.m-auto {
   margin: 0 auto;
 }
 
@@ -946,6 +954,7 @@ h2 {
   font-weight: 700;
   font-size: 18px;
   color: #909090;
+  margin: 1rem 0;
 }
 
 p {
@@ -1190,6 +1199,11 @@ p {
 
 .btn-success:hover {
   background-color: #ffa200;
+}
+
+.btn-small {
+  font-size: 14px;
+  padding: 9px 13.5px;
 }
 
 .btn:hover {
@@ -1448,6 +1462,69 @@ a.link-show:hover {
     color: inherit;
     height: 100%;
   }
+}
+
+.form-group {
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  display: block;
+  height: 100%;
+  transition: 0.3s ease-out;
+}
+
+.form-group:hover {
+  border-color: #979797;
+}
+
+form {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+form input {
+  margin: 0 10px;
+  padding: 0 10px 0 0;
+  border: 0px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  position: relative;
+  color: #333333;
+}
+
+form input:last-child:after {
+  font-family: 'Glyphter';
+  content: '\0048';
+  margin-left: 10px;
+  cursor: initial;
+}
+
+form input:focus {
+  border: 0px solid black;
+  outline-width: 0;
+}
+
+form input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+form input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0.2;
+}
+
+form input:last-child {
+  border-right: 1px solid rgba(227, 227, 227, 0);
+  margin: 0 0;
+  padding: 0 0;
+}
+
+form input[type="date"] {
+  background-color: white;
+  cursor: pointer;
 }
 
 body {
