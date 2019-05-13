@@ -1,12 +1,13 @@
+#mobile-menu-bar {
+    display: none;
+}
+
 .side-bar::-webkit-scrollbar {
     width: 0 !important
 }
 
 .side-bar {
     overflow: -moz-scrollbars-none;
-}
-
-.side-bar {
     -ms-overflow-style: none;
 }
 
@@ -66,6 +67,10 @@
     &.active {
         left: -($side-bar-closed);
     }
+
+    &.active .top-bar-menu {
+        display: none;
+    }
 }
 
 .top-bar {
@@ -75,19 +80,89 @@
     left: 0;
     right: 0;
     width: 100vw;
-    height: $top-bar-height;
+    height: auto;
     background-color: $white;
     display: flex;
+    align-items: center;
     border-bottom: 0.5px solid $light-3;
     box-shadow: 0 0 10px rgba(black, 0.1);
 
     &-left {
         flex: 1;
+        font-family: $brand-font;
+        width: auto;
+        padding-left: 1rem;
+        font-size: 25px;
+        display: none;
     }
 
     &-right {
         flex: 1;
         display: flex;
         justify-content: flex-end;
+        color: black;
+    }
+}
+
+// Disabling TOP RIGHT bar when mobile (less than 1200px)
+// this part goes to the side-bar then - see: resize.js
+@media (max-width: 1200px) {
+    .top-bar-right {
+        display: none;
+    }
+
+    .top-bar {
+        height: $top-bar-height;
+    }
+}
+
+
+// Switching the side-bar into mobile mode (max 992px)
+@media (max-width: 992px) {
+    #side-bar {
+        display: none;
+    }
+
+    #mobile-menu-bar {
+        display: none;
+
+        &.active {
+            display: block
+        }
+    }
+
+    .side-bar {
+        top: 0;
+        width: 100vw;
+        display: block;
+        z-index: 5;
+        left: 0;
+
+        &-header {
+            justify-content: flex-start;
+        }
+
+        &-hamburger {
+            display: none;
+        }
+
+        &.active {
+            top: 0;
+            @include mobile-menu-in;
+            left: 0;
+            display: block;
+        }
+
+        &.active .top-bar-menu {
+            display: block;
+        }
+    }
+
+    .top-bar {
+        z-index: 4;
+
+        &-left {
+            display: block;
+        }
     }
 }

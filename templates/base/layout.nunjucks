@@ -16,5 +16,6 @@
     {% endblock content %}
 </main>
 <script src="js/script.js"></script>
+<script src="js/resize.js"></script>
 </body>
 </html>

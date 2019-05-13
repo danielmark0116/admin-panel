@@ -1,11 +1,14 @@
 .top-bar-menu {
     display: flex;
+    height: $top-bar-height;
 
     &-item {
         display: flex;
         align-content: center;
         align-items: center;
         border-left: 0.5px solid $light-3;
+        height: auto;
+        color: inherit;
         padding: 0 2rem;
         @include fade;
 
@@ -20,5 +23,49 @@
 
     &-ico {
         display: flex;
+        color: inherit;
+    }
+}
+
+// Mobile view (<1200px)
+@media (max-width: 1200px) {
+    .top-bar-menu {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        &-item {
+            margin: 0 0;
+            padding: 0 0;
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+            align-items: center;
+            height: (($side-bar-width - $side-bar-closed));
+            border-left: 2px solid rgba($orange, 0);
+            background-color: inherit;
+            color: $light-1;
+            @include fade;
+
+            &:hover {
+                background-color: $grey;
+                color: $white;
+                border-left: 2px solid rgba($orange, 1);
+            }
+
+            & p {
+                padding-left: 1rem;
+                color: inherit;
+            }
+        }
+
+        &-ico {
+            width: ($side-bar-width * 0.3);
+            @include flex-center;
+            color: inherit;
+            height: 100%;
+
+
+        }
     }
 }

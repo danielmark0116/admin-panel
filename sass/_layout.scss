@@ -1,8 +1,6 @@
 main.wrapper {
     display: block;
-    margin-left: $side-bar-offset;
     color: grey;
-    // width: 100%;
     padding: 0 1rem 1rem;
     margin: $top-bar-offset 1rem 1rem $side-bar-offset;
     @include fade;
@@ -46,4 +44,20 @@ main.wrapper {
     width: 100%;
     max-width: 1040px;
     margin: 0 auto;
+}
+
+// MOBILE MODE fix (max-width: 992px)
+@media (max-width: 992px) {
+    main.wrapper {
+        display: block;
+        color: grey;
+        // width: 100%;
+        padding: 0 1rem 1rem;
+        margin: $top-bar-offset 0.5rem 0.5rem 0.5rem;
+        @include fade;
+
+        &.active {
+            margin-left: ($side-bar-offset - $side-bar-closed);
+        }
+    }
 }

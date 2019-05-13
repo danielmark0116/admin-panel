@@ -1,6 +1,12 @@
+<div class="hamburger-ico" id="mobile-menu-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+<nav class="side-bar" id="mobile-menu-bar"></nav>
 <nav class="side-bar" id="side-bar">
-    <div class="side-bar-header d-flex align-center">
-        <div class="side-bar-brand flex-item-2 d-flex align-center">
+    <div class="side-bar-header d-flex">
+        <div class="side-bar-brand flex-item-2 d-flex">
             <a href="/">Just Do it</a>
         </div>
         <div class="side-bar-hamburger flex-item d-flex justify-content-center align-center">
@@ -112,13 +118,16 @@
         </li>
     </ul>
     <div class="side-bar-separator"></div>
+    <div id="input"></div>
 </nav>
 
 <nav class="top-bar">
     <div class="top-bar-left">
-        left
+        <div class="">
+            <a href="/">Just Do it</a>
+        </div>
     </div>
-    <div class="top-bar-right">
+    <div class="top-bar-right" id="top-bar-right">
         <div class="top-bar-menu">
             <a href="/" class="top-bar-menu-item">
                 <div class="top-bar-menu-ico">
@@ -133,6 +142,11 @@
             <a href="/" class="top-bar-menu-item">
                 <div class="top-bar-menu-ico">
                     <div class="icon-notification"></div>
+                </div>
+                <div class="d-d-none">
+                    <p>
+                        Notifications
+                    </p>
                 </div>
                 
             </a>
@@ -150,6 +164,11 @@
             <a href="/" class="top-bar-menu-item">
                 <div class="top-bar-menu-ico">
                     <div class="icon-quit"></div>
+                </div>
+                <div class="d-d-none">
+                    <p>
+                        Log Out
+                    </p>
                 </div>
             </a>
         </div>

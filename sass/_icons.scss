@@ -129,3 +129,17 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
+
+// MOBILE MENU FIX - vertically centering ':before' content
+
+@media (max-width: 1200px) {
+    // [class*='icon-']:before {
+    //     // @include flex-center;
+    //     // height: auto;
+    // }
+
+    [class*='icon-'] {
+        display: flex;
+        align-items: center;
+    }
+}

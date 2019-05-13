@@ -32,6 +32,33 @@
     animation-timing-function: ease-in-out;
 }
 
+@mixin mobile-menu-in {
+    animation-name: mobile-menu-in;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes mobile-menu-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    50% {
+        transform: translateY(0px)
+    }
+
+    70% {
+        transform: translateY(-20px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes menu-item-fade-out {
     0% {
         opacity: 1;
