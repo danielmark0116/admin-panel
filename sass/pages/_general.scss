@@ -1,0 +1,33 @@
+.section {
+    &-general-statistics {
+        & h2.title-border {
+            border-bottom: 0.5px solid $light-3;
+            margin: 1rem 3rem 1rem 0;
+            padding: 0.5rem 0;
+            @include fade-long;
+
+            & span {
+                float: right;
+                font-weight: 400;
+
+            }
+
+            &:hover {
+                border-bottom: 0.5px solid $light-1;
+            }
+        }
+    }
+
+}
+
+// MOBILE FIX
+@media (max-width: 996px) {
+    .section {
+        &-general-statistics {
+            & h2.title-border {
+                margin: 1rem 0;
+            }
+        }
+
+    }
+}

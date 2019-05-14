@@ -1,3 +1,6 @@
+// ---------- HAMBURGER --------------------
+// ----------------------------------------
+
 #mobile-menu-btn {
     display: none;
 }
@@ -32,6 +35,9 @@
         }
     }
 }
+
+// ---------- Regular BTNs --------------------
+// ----------------------------------------
 
 .btn {
     background-color: $light-2;
@@ -69,6 +75,55 @@
         cursor: pointer;
     }
 }
+
+
+// ---------- Color Tabs --------------------
+// ----------------------------------------
+
+.btn-tab {
+    background-color: inherit;
+    color: $blue;
+    display: inline-flex;
+    align-items: center;
+
+    &:before {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: $blue;
+        content: '';
+        margin-right: 1rem;
+    }
+
+    &.yellow {
+        &:before {
+            background-color: $yellow;
+        }
+    }
+
+    &.green {
+        &:before {
+            background-color: $green;
+        }
+    }
+
+    &.active {
+        background-color: rgba($light-3, 0.6);
+        color: $light-1;
+    }
+
+    &:focus {
+        outline-width: 0;
+    }
+
+    &:hover {
+        background-color: $light-3;
+    }
+}
+
+// ---------- LINKS --------------------
+// ----------------------------------------
 
 a.link {
     color: $blue;

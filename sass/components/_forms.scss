@@ -24,11 +24,12 @@ form {
 
     & input {
         margin: 0 10px;
-        padding: 0 $form-input-padding 0 0;
+        padding: 0.1rem $form-input-padding 0.1rem 0;
         border: 0px solid $form-border-color;
         border-right: 1px solid $form-border-color;
         position: relative;
-        color: $grey;
+        color: rgba($grey, 0.7);
+        font-size: 90%;
 
         &:last-child:after {
             font-family: 'Glyphter';
@@ -62,5 +63,38 @@ form {
     & input[type="date"] {
         background-color: white;
         cursor: pointer;
+    }
+}
+
+// MOBILE fix 
+
+@media (max-width: 996px) {
+    form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        & input {
+            display: block;
+            border: 1px solid $form-border-color;
+            margin: 0.5rem 0;
+            padding: 0.5rem 0.5rem;
+
+            &:last-child {
+                border-right: 1px solid rgba($form-border-color, 1);
+                display: block;
+                border: 1px solid $form-border-color;
+                margin: 0.5rem 0;
+                padding: 0.5rem 0.5rem;
+            }
+
+            &:last-child:after {
+                font-family: 'Glyphter';
+                content: '';
+                margin-left: $form-input-padding;
+                cursor: initial;
+                display: none;
+            }
+        }
     }
 }

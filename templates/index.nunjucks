@@ -5,21 +5,52 @@
 {% endblock navbar %}
 
 {% block content %}
-<div class="box">
+<div class="box section-general-statistics">
     <div class="title">
         <h1>
             General statistics
         </h1>
     </div>
     <div class="box-inner">
-        <div class="container">
+        <div class="container mt-2 mb-2">
             <form action="" class="m-auto">
                 <div class="form-group">
-                    <input type="date">
-                    <input type="date">
+                    <input type="date" value="2019-01-01">
+                    <input type="date"  value="2019-01-01">
                 </div>
                 <button class="btn btn-success btn-small icon-refresh"></button>
             </form>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col col-6 col-m-6 col-s-12">
+                    <h2 class="title-border">Visit signups <span>124</span></h2>
+                </div>
+                <div class="col col-6 col-m-6 col-s-12">
+                    <h2 class="title-border">Net deposit <span>234</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-6 col-m-6 col-s-12">
+                    <h2 class="title-border">FTD  <span>654</span></h2>
+                </div>
+                <div class="col col-6 col-m-6 col-s-12">
+                    <h2 class="title-border">Turnover  <span>222</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <h2>Earnings chart</h2>
+        </div>
+        <div class="container d-flex justify-content-center mt-2 mb-2">
+            <button class="btn btn-tab active">FTD</button>
+            <button class="btn btn-tab yellow">Second Factor</button>
+            <button class="btn btn-tab green">Lorem</button>
+            <button class="btn btn-tab green">Ipsum</button>
+        </div>
+        <div class="container">
+            <img src="/images/charts/chart-large.png" alt="bar" srcset="/images/charts/chart-large.png 2000w, /images/charts/chart.png 800w"/>
+
         </div>
     </div>
     <div class="separator"></div>
@@ -31,108 +62,77 @@
 <div class="box">
     <div class="title">
         <h1>
-            Links
+            Link table
         </h1>
     </div>
-    <div class="box-inner">
-        <p>
-            CONTENT
-        </p>
-    </div>
-</div>
-<div class="box">
-    <div class="title">
-        <h1>
-            Details
-        </h1>
-    </div>
-    <div class="box-inner">
-        <p>
-            tabela
-        </p>
-    </div>
-</div>
-<div class="box">
-    <div class="title">
-        <h1>
-            Payout
-        </h1>
-    </div>
-    <div class="box-inner">
-        <p>
-            tabela
-        </p>
+    <div class="inner-box">
+        <div class="container d-flex justify-content-center pt-2">
+            <button class="btn btn-success">+ add new</button>
+        </div>
+        <div class="container pb-1">
+            <div class="scroll-wrapper mt-1">
+                <table class="table-link">
+                    <tbody>
+                        <tr>
+                            <td>Google</td>
+                            <td>
+                                <a href="." class="link">www.google.com</a>
+                                <span>
+                                    <div class="icon-links yellow"></div>
+                                    <div class="icon-trash"></div>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Google</td>
+                            <td>
+                                <a href="." class="link">www.google.com</a>
+                                <span>
+                                    <div class="icon-links yellow"></div>
+                                    <div class="icon-trash"></div>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Google</td>
+                            <td>
+                                <a href="." class="link">www.google.com</a>
+                                <span>
+                                    <div class="icon-links yellow"></div>
+                                    <div class="icon-trash"></div>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Google</td>
+                            <td>
+                                <a href="." class="link">www.google.com</a>
+                                <span>
+                                    <div class="icon-links yellow"></div>
+                                    <div class="icon-trash"></div>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Google</td>
+                            <td>
+                                <a href="." class="link">www.google.com</a>
+                                <span>
+                                    <div class="icon-links yellow"></div>
+                                    <div class="icon-trash"></div>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center pb-2">
+            <button class="btn btn-success">+ add new</button>
+        </div>
+        
     </div>
 </div>
 
-<div class="box">
-    <div class="title">
-        <h1>
-            General statistics
-        </h1>
-    </div>
-    <div class="box-inner">
-        <h2>Buttons:</h2>
-        <button class="btn btn-primary">Click me</button>
-        <button class="btn btn-success">Click me</button>
-        <h2>Links:</h2>
-        <a href="" class="link link-small">small link</a>
-        <a href="" class="link link-large">large link</a>
-        <a href="" class="link link-show"></a>
-    </div>
-    <div class="separator"></div>
-    <div class="box-inner">
-        <h2>Date Period:</h2>
-        <div class="container">
-            cos tam
-        </div>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque eget. Duis ac sem et turpis tincidunt molestie in non ipsum. Maecenas ut augue erat. Phasellus eu est commodo est hendrerit tempor. Mauris dignissim ex vel magna aliquet, sit amet facilisis turpis tincidunt. Fusce quis blandit libero, sed dapibus nisl. Pellentesque vitae ligula sed tellus sagittis dapibus eu non metus. Mauris rutrum ligula ut sapien varius, pellentesque volutpat diam porta. Ut at nunc ac tortor dapibus sodales id at leo. Nunc posuere lorem non feugiat elementum. Nunc sagittis diam justo, nec malesuada sapien tristique id. Vivamus in consequat nibh. Etiam tempor id ligula a dapibus. Proin vitae arcu nulla.</p>
-        <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-        <div class="separator"></div>
-        <div class="container">
-            <ul>
-            <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-            <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-            <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-            </ul>
-            <ol>
-            <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-            <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-            <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-            </ol>
-        </div>
-    </div>
-</div>
 
-<div class="box">
-    <h3>Flex Grid Demo</h3>
-    <div class="d-flex">
-        <div class="flex-item flex-6 flex-m-12">
-            FLEX 
-        </div>
-        <div class="flex-item flex-6 flex-m-12">
-            FLEX 
-        </div> 
-    </div>
-    <div class="d-flex">
-        <div class="flex-item flex-6 flex-m-6">
-            FLEX 
-        </div>
-        <div class="flex-item flex-6 flex-m-6">
-            FLEX 
-        </div> 
-    </div>
-    <div class="d-flex">
-        <div class="flex-item flex-3 justify-content-end">
-            <div class="itemka d-flex align-center">dfdj</div>
-        </div>
-        <div class="flex-item flex-3">ssss</div>
-        <div class="flex-item-2 flex-6">ssss</div>
-    </div>
-</div>
 {% endblock content %}

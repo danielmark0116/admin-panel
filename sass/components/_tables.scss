@@ -1,0 +1,167 @@
+.scroll-wrapper {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    padding: 1rem 2rem;
+
+    & table {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+// GENERAL STYLING
+
+table {
+    color: $grey;
+    border-spacing: 0;
+    // margin: 2rem 0;
+    font-size: 16px;
+
+    & thead {
+        & tr {
+            & th {
+                text-align: start;
+                font-weight: 700;
+                color: $light-2;
+                margin: 1rem 0;
+                padding: 10px 15px;
+
+                & .table-header {
+                    color: $light-1;
+                    border-radius: 5px;
+                    display: inline;
+                    padding: 5px 14px;
+
+                    &:hover {
+                        background-color: $bg;
+                        color: $grey;
+                    }
+                }
+            }
+        }
+    }
+
+    & tbody {
+        & tr {
+            margin: 0 15px;
+            padding: 6rem 0;
+            @include fade-short;
+
+            &:hover {
+                background-color: rgba($light-3, 0.5);
+                cursor: pointer;
+            }
+
+            & td {
+                padding: 20px 28px;
+                color: $grey;
+                border-bottom: 1px solid $light-3;
+            }
+        }
+    }
+
+    &.table-link {
+        border-bottom: 1px solid $light-3;
+
+        & tbody {
+
+            & tr {
+
+                &:hover {
+                    cursor: auto;
+                }
+
+                &:hover span {
+                    visibility: visible;
+                }
+
+                & td {
+                    width: 60%;
+                    border-bottom: 0px solid $light-3;
+                    border-top: 1px solid $light-3;
+
+                    & span {
+                        visibility: hidden;
+                        float: right;
+                        display: flex;
+
+
+                        & div {
+                            padding: 0 5px;
+                            margin: 0 5px 0 0;
+                            font-weight: 700;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+
+                & td:first-of-type {
+                    width: 40%;
+                    color: $light-2;
+                    font-weight: 700;
+                    color: $light-2;
+                    margin: 1rem 0;
+                    padding: 10px 15px;
+                    border-top: 2px solid $light-3;
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 996px) {
+    table.table-link {
+        & tbody {
+            & tr {
+                display: flex;
+                flex-direction: column;
+                margin: 0 0;
+                padding: 0 0;
+
+                & td {
+                    min-width: 100%;
+                    width: 100%;
+                    padding-top: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 0;
+                    margin: 0 0;
+
+                    & a.link {
+                        text-align: center;
+                        padding-top: 15px;
+                    }
+
+                    & span {
+                        visibility: visible;
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 10px;
+
+                        & div {
+                            display: inline;
+                        }
+                    }
+
+                    &:first-of-type {
+                        width: 40%;
+                        color: $light-2;
+                        font-weight: 700;
+                        color: $light-2;
+                        padding: 20px 0 5px;
+                        text-align: center;
+
+                    }
+                }
+            }
+
+
+        }
+    }
+}

@@ -46,6 +46,11 @@ main.wrapper {
     margin: 0 auto;
 }
 
+.container-fluid {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .m-auto {
     margin: 0 auto;
 }
@@ -63,5 +68,25 @@ main.wrapper {
         &.active {
             margin-left: ($side-bar-offset - $side-bar-closed);
         }
+    }
+}
+
+// MARGINS and PADDINGS classes
+
+@for $i from 1 through 5 {
+    .#{mt}-#{$i} {
+        margin-top: 1rem * $i;
+    }
+
+    .#{pt}-#{$i} {
+        padding-top: 1rem * $i;
+    }
+
+    .#{mb}-#{$i} {
+        margin-bottom: 1rem * $i;
+    }
+
+    .#{pb}-#{$i} {
+        padding-bottom: 1rem * $i;
     }
 }
