@@ -1681,7 +1681,6 @@ table.table-link tbody tr td:first-of-type {
   color: #909090;
   margin: 1rem 0;
   padding: 10px 15px;
-  border-top: 2px solid #e3e3e3;
 }
 
 @media (max-width: 996px) {
@@ -1726,6 +1725,7 @@ table.table-link tbody tr td:first-of-type {
     color: #909090;
     padding: 20px 0 5px;
     text-align: center;
+    border-top: 2px solid #e3e3e3;
   }
 }
 
