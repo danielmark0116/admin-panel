@@ -1588,7 +1588,8 @@ form input[type="date"] {
   width: 100%;
   display: block;
   overflow-x: auto;
-  padding: 1rem 2rem;
+  padding: 1rem auto;
+  margin: 1rem auto;
 }
 
 .scroll-wrapper table {
@@ -1608,6 +1609,11 @@ table thead tr th {
   color: #909090;
   margin: 1rem 0;
   padding: 10px 15px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+table thead tr th.wide {
+  min-width: 140px;
 }
 
 table thead tr th .table-header {
@@ -1733,6 +1739,42 @@ img {
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+.pagination {
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+}
+
+.pagination div {
+  padding: 0 15px;
+  line-height: 35px;
+  margin: 0 2px;
+  border-radius: 5px;
+}
+
+.pagination div:hover {
+  background-color: #f5f5f2;
+  cursor: pointer;
+}
+
+.pagination-prev, .pagination-next {
+  color: #979797;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  font-weight: 700;
+}
+
+.pagination-page {
+  color: #56819F;
+}
+
+.pagination-page.active {
+  color: #979797;
+  background-color: #f5f5f2;
 }
 
 .section-general-statistics h2.title-border {

@@ -1,0 +1,26 @@
+{% extends "base/layout.nunjucks" %}
+
+{% block navbar %}
+{% include "partials/navbar.nunjucks" %}
+{% endblock navbar %}
+
+{% block content %}
+<div class="box section-detail-statistics">
+    <div class="title">
+        <h1>
+            Personal data
+        </h1>
+    </div>
+    <div class="box-inner">
+        
+        <div class="container">
+            Form
+        </div>
+       
+    </div>
+</div>
+
+
+
+
+{% endblock content %}

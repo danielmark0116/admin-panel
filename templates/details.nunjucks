@@ -5,14 +5,206 @@
 {% endblock navbar %}
 
 {% block content %}
-<div class="box section-general-statistics">
+<div class="box section-detail-statistics">
     <div class="title">
         <h1>
-            Details
+            Detail statistic
         </h1>
     </div>
     <div class="box-inner">
-        content
+        <div class="container mt-2">
+            <form action="" class="m-auto">
+                <div class="form-group">
+                    <input type="date" value="2019-01-01">
+                    <input type="date"  value="2019-01-01">
+                </div>
+                <button class="btn btn-success btn-small icon-refresh"></button>
+            </form>
+        </div>
+    </div>
+    <div class="separator"></div>
+    <div class="box-inner">
+        <div class="container-fluid mb-1">
+            <div class="scroll-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="table-header">
+                                    Tracker name
+                                </div>    
+                            </th>
+                            <th class="wide">
+                                <div class="table-header">
+                                    Initiated date
+                                </div>    
+                            </th>
+                            <th>
+                                <div class="table-header">
+                                    Visits
+                                </div>    
+                            </th>
+                            <th>
+                                <div class="table-header">
+                                    Unique
+                                </div>    
+                            </th>
+                            <th>
+                                <div class="table-header">
+                                    Signups
+                                </div>    
+                            </th>
+                            <th>
+                                <div class="table-header">
+                                    FTD
+                                </div>    
+                            </th>
+                            <th>
+                                <div class="table-header">
+                                    Depositors
+                                </div>    
+                            </th>
+                            <th class="wide">
+                                <div class="table-header">
+                                    Deposits ($)
+                                </div>    
+                            </th>
+                            <th class="wide">
+                                <div class="table-header">
+                                    Payout ($)
+                                </div>    
+                            </th>
+                            <th>
+                                <div class="table-header">
+                                    Turnover
+                                </div>    
+                            </th>
+                            <th>
+                                <div class="table-header">
+                                    Deal
+                                </div>    
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>af/sam_test</td>
+                            <td>17/08/02 (12:34)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>34,234.50</td>
+                            <td>244.00</td>
+                            <td>142,398.08</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>af/sam_test</td>
+                            <td>17/08/02 (12:34)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>34,234.50</td>
+                            <td>244.00</td>
+                            <td>142,398.08</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>af/sam_test</td>
+                            <td>17/08/02 (12:34)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>34,234.50</td>
+                            <td>244.00</td>
+                            <td>142,398.08</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>af/sam_test</td>
+                            <td>17/08/02 (12:34)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>34,234.50</td>
+                            <td>244.00</td>
+                            <td>142,398.08</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>af/sam_test</td>
+                            <td>17/08/02 (12:34)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>34,234.50</td>
+                            <td>244.00</td>
+                            <td>142,398.08</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>af/sam_test</td>
+                            <td>17/08/02 (12:34)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>34,234.50</td>
+                            <td>244.00</td>
+                            <td>142,398.08</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>af/sam_test</td>
+                            <td>17/08/02 (12:34)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>34,234.50</td>
+                            <td>244.00</td>
+                            <td>142,398.08</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                        <tr>
+                            <td>af/sam_test</td>
+                            <td>17/08/02 (12:34)</td>
+                            <td>232</td>
+                            <td>114</td>
+                            <td>12</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>34,234.50</td>
+                            <td>244.00</td>
+                            <td>142,398.08</td>
+                            <td>cpl(200)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center pb-1">
+            <div class="pagination">
+                <div class="icon-arrow-left pagination-prev"></div>
+                <div class="pagination-page active">1</div>
+                <div class="pagination-page">2</div>
+                <div class="pagination-page">3</div>
+                <div class="pagination-page">4</div>
+                <div class="icon-arrow-right pagination-next"></div>
+            </div>
+        </div>
     </div>
 </div>
 

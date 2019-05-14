@@ -1,0 +1,85 @@
+{% extends "base/layout.nunjucks" %}
+
+{% block navbar %}
+{% include "partials/navbar.nunjucks" %}
+{% endblock navbar %}
+
+{% block content %}
+<div class="box section-detail-statistics">
+    <div class="title">
+        <h1>
+            Banners
+        </h1>
+    </div>
+    <div class="box-inner">
+        <div class="container d-flex justify-content-center">
+            <button class="btn btn-success">+ add new</button>
+        </div>
+        <div class="container">
+            <div class="scroll-wrapper">
+                <table class="table-link">
+                    <tbody>
+                        <tr>
+                            <td>Home page</td>
+                            <td>
+                                <a href="." class="link">http://www.google.com</a>
+                                <span>
+                                    <div class="icon-links yellow"></div>
+                                    <div class="icon-trash"></div>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Currently offer</td>
+                            <td>
+                                <a href="." class="link">http://www.currently.com</a>
+                                <span>
+                                    <div class="icon-links yellow"></div>
+                                    <div class="icon-trash"></div>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Blurpix</td>
+                            <td>
+                                <a href="." class="link">http://www.blurpix.com</a>
+                                <span>
+                                    <div class="icon-links yellow"></div>
+                                    <div class="icon-trash"></div>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Your site</td>
+                            <td>
+                                <a href="." class="link">http://www.site.com</a>
+                                <span>
+                                    <div class="icon-links yellow"></div>
+                                    <div class="icon-trash"></div>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Google</td>
+                            <td>
+                                <a href="." class="link">http://www.google.com</a>
+                                <span>
+                                    <div class="icon-links yellow"></div>
+                                    <div class="icon-trash"></div>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center pb-1">
+            <button class="btn btn-success">+ add new</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock content %}

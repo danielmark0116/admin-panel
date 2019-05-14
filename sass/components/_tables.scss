@@ -2,7 +2,8 @@
     width: 100%;
     display: block;
     overflow-x: auto;
-    padding: 1rem 2rem;
+    padding: 1rem auto;
+    margin: 1rem auto;
 
     & table {
         width: 100%;
@@ -26,6 +27,11 @@ table {
                 color: $light-2;
                 margin: 1rem 0;
                 padding: 10px 15px;
+                border-bottom: 1px solid $light-3;
+
+                &.wide {
+                    min-width: 140px;
+                }
 
                 & .table-header {
                     color: $light-1;
@@ -117,6 +123,7 @@ table {
 
 @media (max-width: 996px) {
     table.table-link {
+
         & tbody {
             & tr {
                 display: flex;
