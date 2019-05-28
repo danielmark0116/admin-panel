@@ -1,0 +1,23 @@
+.fluid-border {
+  border: 0.5px solid $light-3;
+  border-left: none;
+  padding: 1rem 2rem;
+  &:last-of-type {
+    border-right: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .fluid-border {
+    border: 0.5px solid $light-3;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 1rem 2rem;
+    &:last-of-type {
+      border: 0.5px solid $light-3;
+      border-left: none;
+      border-right: none;
+    }
+  }
+}

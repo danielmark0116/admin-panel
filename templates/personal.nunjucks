@@ -11,13 +11,44 @@
             Personal data
         </h1>
     </div>
-    <div class="box-inner">
-        
-        <div class="container">
-            Form
+    <form action="" class="fluid">
+        <div class="form-group-secondary">
+            <label for="name">Name</label>
+            <input type="text" class="form-input" name="name" id="name" required></input>
+            <label for="surname">Surname</label>
+            <input type="text" class="form-input" name="surname" id="surname" required></input>
+            <label for="email">E-mail</label>
+            <input type="email" class="form-input" name="email" id="email" required></input>
+            <label for="phone">Phone number</label>
+            <input type="text" class="form-input" name="phone" id="phone" required></input>
+        </div>
+        <div class="separator"></div>
+        <div class="form-group-secondary">
+            <label for="skype">Skype</label>
+            <input type="text" class="form-input" name="skype" id="skype" required></input>
+            <label for="icq">ICQ</label>
+            <input type="text" class="form-input" name="icq" id="icq" required></input>
+            <label for="Msn">Msn</label>
+            <input type="text" class="form-input" name="Msn" id="Msn" required></input>
+        </div>
+        <div class="separator"></div>
+        <div class="form-group-secondary">
+            <label for="wallet">Wallet</label>
+            <input type="text" class="form-input" name="wallet" id="wallet" required></input>
+        </div>
+        <div class="separator"></div>
+        <div class="form-group-secondary">
+            <label for="password">Password</label>
+            <input type="password" class="form-input" name="password" id="password" required></input>
+            <label for="pass-repeat">Repeat password</label>
+            <input type="password" class="form-input" name="pass-repeat" id="pass-repeat" required></input>
+        </div>
+        <div class="separator"></div>
+        <div class="form-group-secondary d-flex justify-content-center">
+            <button type="submit" class="btn btn-success">Save</button>
         </div>
        
-    </div>
+    </form>
 </div>
 
 

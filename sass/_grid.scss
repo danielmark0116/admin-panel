@@ -1,86 +1,84 @@
 // FLEX GRID
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .d-flex,
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 /* ----------------- ROW FIX ------------------ */
 
 .row::before,
 .row::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: '';
+  display: table;
+  clear: both;
 }
 
 // -----------------------------------
 
 .flex-item {
-    flex-grow: 1;
-    display: flex;
+  flex-grow: 1;
+  display: flex;
 
-    &-2 {
-        flex-grow: 2;
-    }
+  &-2 {
+    flex-grow: 2;
+  }
 }
 
 .justify-content-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .justify-content-end {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .align-center {
-    align-content: center;
+  align-content: center;
 }
 
 .col {
-    padding: 0 0;
+  padding: 0 0;
 }
 
 @media (min-width: 1200px) {
-    @for $i from 1 through $flex-columns {
-        .#{col}-#{$i} {
-            $width: 100% / $flex-columns * $i;
-            flex: 0 0 $width;
-            max-width: $width;
-        }
+  @for $i from 1 through $flex-columns {
+    .#{col}-#{$i} {
+      $width: 100% / $flex-columns * $i;
+      flex: 0 0 $width;
+      max-width: $width;
     }
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1199px) {
-    @for $i from 1 through $flex-columns {
-        .#{col}-#{m}-#{$i} {
-            $width: 100% / $flex-columns * $i;
-            flex: 0 0 $width;
-            max-width: $width;
-        }
+  @for $i from 1 through $flex-columns {
+    .#{col}-#{m}-#{$i} {
+      $width: 100% / $flex-columns * $i;
+      flex: 0 0 $width;
+      max-width: $width;
     }
+  }
 }
 
 @media (max-width: 768px) {
-    @for $i from 1 through $flex-columns {
-        .#{col}-#{s}-#{$i} {
-            $width: 100% / $flex-columns * $i;
-            flex: 0 0 $width;
-            max-width: $width;
-        }
+  @for $i from 1 through $flex-columns {
+    .#{col}-#{s}-#{$i} {
+      $width: 100% / $flex-columns * $i;
+      flex: 0 0 $width;
+      max-width: $width;
     }
+  }
 }
 
 @media (max-width: 768px) {
-
-    .d-flex {
-        flex-direction: column;
-    }
-
+  .d-flex {
+    flex-direction: column;
+  }
 }

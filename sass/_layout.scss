@@ -1,92 +1,100 @@
 main.wrapper {
-    display: block;
-    color: grey;
-    padding: 0 1rem 1rem;
-    margin: $top-bar-offset 1rem 1rem $side-bar-offset;
-    @include fade;
+  display: block;
+  color: grey;
+  padding: 0 1rem 1rem;
+  margin: $top-bar-offset 1rem 1rem $side-bar-offset;
+  @include fade;
 
-    &.active {
-        margin-left: ($side-bar-offset - $side-bar-closed);
-    }
+  &.active {
+    margin-left: ($side-bar-offset - $side-bar-closed);
+  }
 }
 
 .box {
-    background-color: $white;
-    box-shadow: 0 0 10px rgba(black, 0.15);
-    margin: 1rem 0;
-    padding: 0 0;
-    @include fade;
+  background-color: $white;
+  box-shadow: 0 0 10px rgba(black, 0.15);
+  margin: 1rem 0;
+  padding: 0 0;
+  @include fade;
 
-    &:hover,
-    &:active,
-    &:focus {
-        box-shadow: 0 0 10px rgba(black, 0.25);
-    }
+  &:hover,
+  &:active,
+  &:focus {
+    box-shadow: 0 0 10px rgba(black, 0.25);
+  }
 
-    &-inner {
-        padding: 1rem 2rem;
-    }
+  &-inner {
+    padding: 1rem 2rem;
+  }
 }
 
 .title {
-    width: 100%;
-    border-bottom: 0.5px solid $light-3;
+  width: 100%;
+  border-bottom: 0.5px solid $light-3;
 }
 
 .separator {
-    width: 100%;
-    margin: 1rem 0 0;
-    height: 1px;
-    border-bottom: 0.5px solid $light-3;
+  width: 100%;
+  margin: 1rem 0 0;
+  height: 1px;
+  border-bottom: 0.5px solid $light-3;
 }
 
 .container {
-    width: 100%;
-    max-width: 1040px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
 }
 
 .container-fluid {
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .m-auto {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 // MOBILE MODE fix (max-width: 992px)
 @media (max-width: 992px) {
-    main.wrapper {
-        display: block;
-        color: grey;
-        // width: 100%;
-        padding: 0 1rem 1rem;
-        margin: $top-bar-offset 0.5rem 0.5rem 0.5rem;
-        @include fade;
+  main.wrapper {
+    display: block;
+    color: grey;
+    // width: 100%;
+    padding: 0 1rem 1rem;
+    margin: $top-bar-offset 0.5rem 0.5rem 0.5rem;
+    @include fade;
 
-        &.active {
-            margin-left: ($side-bar-offset - $side-bar-closed);
-        }
+    &.active {
+      margin-left: ($side-bar-offset - $side-bar-closed);
     }
+  }
 }
 
 // MARGINS and PADDINGS classes
 
 @for $i from 1 through 5 {
-    .#{mt}-#{$i} {
-        margin-top: 1rem * $i;
-    }
+  .#{mt}-#{$i} {
+    margin-top: 1rem * $i;
+  }
 
-    .#{pt}-#{$i} {
-        padding-top: 1rem * $i;
-    }
+  .#{pt}-#{$i} {
+    padding-top: 1rem * $i;
+  }
 
-    .#{mb}-#{$i} {
-        margin-bottom: 1rem * $i;
-    }
+  .#{mb}-#{$i} {
+    margin-bottom: 1rem * $i;
+  }
 
-    .#{pb}-#{$i} {
-        padding-bottom: 1rem * $i;
-    }
+  .#{pb}-#{$i} {
+    padding-bottom: 1rem * $i;
+  }
+
+  .#{px}-#{$i} {
+    padding-left: 1rem * $i;
+    padding-right: 1rem * $i;
+  }
+  .#{py}-#{$i} {
+    padding: (1rem * $i) 0;
+  }
 }
