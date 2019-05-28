@@ -3,98 +3,113 @@ $form-border-color: $light-3;
 $form-input-padding: 10px;
 
 .form-group {
-    border: 1px solid $form-border-color;
-    border-radius: $border-radius;
-    padding: 0.5rem 1rem;
-    display: block;
-    height: 100%;
-    @include fade;
+  border: 1px solid $form-border-color;
+  border-radius: $border-radius;
+  padding: 0.5rem 1rem;
+  display: block;
+  height: 100%;
+  @include fade;
 
-    &:hover {
-        border-color: $light-1;
-
-    }
+  &:hover {
+    border-color: $light-1;
+  }
 }
 
 form {
-    width: max-content;
-    display: flex;
-    align-items: center;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  & .date {
+    &:hover {
+      cursor: pointer;
+    }
+    &:last-child:after {
+      font-family: 'Glyphter';
+      content: '\0048';
+      margin-left: $form-input-padding;
+      cursor: initial;
+    }
+  }
 
-
-    & input {
-        margin: 0 10px;
-        padding: 0.1rem $form-input-padding 0.1rem 0;
-        border: 0px solid $form-border-color;
-        border-right: 1px solid $form-border-color;
-        position: relative;
-        color: rgba($grey, 0.7);
-        font-size: 90%;
-
-        &:last-child:after {
-            font-family: 'Glyphter';
-            content: '\0048';
-            margin-left: $form-input-padding;
-            cursor: initial;
-        }
-
-        &:focus {
-            border: 0px solid black;
-            outline-width: 0;
-        }
-
-
-
-        &[type="date"]::-webkit-inner-spin-button {
-            display: none;
-        }
-
-        &[type="date"]::-webkit-calendar-picker-indicator {
-            opacity: 0.2;
-        }
+  & input {
+    margin: 0 10px;
+    padding: 0.1rem $form-input-padding 0.1rem 0;
+    border: 0px solid $form-border-color;
+    border-right: 1px solid $form-border-color;
+    position: relative;
+    color: rgba($grey, 0.7);
+    font-size: 90%;
+    & .date {
+      &:last-child:before {
+        font-family: 'Glyphter';
+        content: '\0048';
+        margin-left: $form-input-padding;
+        cursor: initial;
+      }
     }
 
-    & input:last-child {
-        border-right: 1px solid rgba($form-border-color, 0);
-        margin: 0 0;
-        padding: 0 0;
+    &:last-child:after {
+      font-family: 'Glyphter';
+      content: '\0048';
+      margin-left: $form-input-padding;
+      cursor: initial;
     }
 
-    & input[type="date"] {
-        background-color: white;
-        cursor: pointer;
+    &:focus {
+      border: 0px solid black;
+      outline-width: 0;
     }
+
+    &[type='date']::-webkit-inner-spin-button {
+      display: none;
+    }
+
+    &[type='date']::-webkit-calendar-picker-indicator {
+      opacity: 0.2;
+    }
+  }
+
+  & input:last-child {
+    border-right: 1px solid rgba($form-border-color, 0);
+    margin: 0 0;
+    padding: 0 0;
+  }
+
+  & input[type='date'] {
+    background-color: white;
+    cursor: pointer;
+  }
 }
 
-// MOBILE fix 
+// MOBILE fix
 
 @media (max-width: 996px) {
-    form {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+  form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
-        & input {
-            display: block;
-            border: 1px solid $form-border-color;
-            margin: 0.5rem 0;
-            padding: 0.5rem 0.5rem;
+    & input {
+      display: block;
+      border: 1px solid $form-border-color;
+      margin: 0.5rem 0;
+      padding: 0.5rem 0.5rem;
 
-            &:last-child {
-                border-right: 1px solid rgba($form-border-color, 1);
-                display: block;
-                border: 1px solid $form-border-color;
-                margin: 0.5rem 0;
-                padding: 0.5rem 0.5rem;
-            }
+      &:last-child {
+        border-right: 1px solid rgba($form-border-color, 1);
+        display: block;
+        border: 1px solid $form-border-color;
+        margin: 0.5rem 0;
+        padding: 0.5rem 0.5rem;
+      }
 
-            &:last-child:after {
-                font-family: 'Glyphter';
-                content: '';
-                margin-left: $form-input-padding;
-                cursor: initial;
-                display: none;
-            }
-        }
+      &:last-child:after {
+        font-family: 'Glyphter';
+        content: '';
+        margin-left: $form-input-padding;
+        cursor: initial;
+        display: none;
+      }
     }
+  }
 }

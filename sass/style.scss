@@ -1,26 +1,26 @@
 // IMPORTS
-@import "variables";
-@import "mixins";
-@import "normalize";
-@import "grid";
-@import "icons";
-@import "layout";
-@import "components/typography";
-@import "components/navbar";
-@import "components/buttons";
-@import "components/side-bar-menu";
-@import "components/topbar";
-@import "components/forms";
-@import "components/tables";
-@import "components/images";
-@import "components/pagination";
-@import "pages/general";
+@import 'variables';
+@import 'mixins';
+@import 'normalize';
+@import 'grid';
+@import 'icons';
+@import 'layout';
+@import 'components/typography';
+@import 'components/navbar';
+@import 'components/buttons';
+@import 'components/side-bar-menu';
+@import 'components/topbar';
+@import 'components/forms';
+@import 'components/tables';
+@import 'components/images';
+@import 'components/pagination';
+@import 'pages/general';
 
-
+// DATEPICKER
+@import 'vendor/datepicker';
 
 // GLOBAL SETTINGS
-
 body {
-    background-color: $bg;
-    font-family: $sans-serif, sans-serif;
+  background-color: $bg;
+  font-family: $sans-serif, sans-serif;
 }
