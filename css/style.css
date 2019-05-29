@@ -1,3 +1,5 @@
+body { background-color: #f5f5f2; font-family: "Roboto", sans-serif; }
+
 @keyframes mobile-menu-in { 0% { opacity: 0;
     transform: translateY(-100px); }
   50% { transform: translateY(0px); }
@@ -419,9 +421,9 @@ p { color: black; font-weight: 100; }
 
 .btn:hover { cursor: pointer; }
 
-.btn-tab { background-color: inherit; color: #56819F; display: -ms-inline-flexbox; display: inline-flex; -ms-flex-align: center; align-items: center; }
+.btn-tab { background-color: inherit; color: #56819f; display: -ms-inline-flexbox; display: inline-flex; -ms-flex-align: center; align-items: center; }
 
-.btn-tab:before { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background-color: #56819F; content: ''; margin-right: 1rem; }
+.btn-tab:before { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background-color: #56819f; content: ''; margin-right: 1rem; }
 
 .btn-tab.yellow:before { background-color: #ffa200; }
 
@@ -433,13 +435,13 @@ p { color: black; font-weight: 100; }
 
 .btn-tab:hover { background-color: #e3e3e3; }
 
-a.link { color: #56819F; padding: 2px 4px; transition: 0.3s ease-out; }
+a.link { color: #56819f; padding: 2px 4px; transition: 0.3s ease-out; }
 
 a.link-large { font-size: 18px; margin: 2px 4px; }
 
 a.link-small { font-size: 12px; margin: 1px 2px; }
 
-a.link:visited { color: #56819F; }
+a.link:visited { color: #56819f; }
 
 a.link:hover { color: #f58220; }
 
@@ -461,7 +463,11 @@ a.link-show:hover { color: black; }
 
 .side-bar-menu li { width: 100%; }
 
+.side-bar-menu li:focus { outline: none; outline-color: transparent; }
+
 .side-bar-menu-slide { transition: 0.5s ease-out; }
+
+.side-bar-menu-slide:focus { outline: none; outline-color: transparent; }
 
 .side-bar-menu-slide.short { transform: translateX(140px); }
 
@@ -482,6 +488,8 @@ a.link-show:hover { color: black; }
 .side-bar-menu-item .side-bar-ico.active { border-left: 2px solid #f58220; }
 
 .side-bar-menu-item .side-bar-ico div { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; height: auto; font-size: 1.2rem; color: inherit; }
+
+a.side-bar-menu-item:focus { outline: none; outline-color: transparent; }
 
 .top-bar-menu { display: -ms-flexbox; display: flex; height: 60px; }
 
@@ -507,13 +515,13 @@ label { color: #979797; display: block; width: 100%; }
 
 input, input.form-input { display: block; margin: 1rem 10px; padding: 0.8rem 1rem; border: 1px solid #e3e3e3; border-radius: 5px; position: relative; color: rgba(51, 51, 51, 0.7); font-size: 100%; transition: 0.3s ease-out; }
 
-input:focus { border: 1px solid #b0b0b0; outline-width: 0; }
+input:focus, input:hover { border: 1px solid #b0b0b0; outline-width: 0; }
 
 input.date { display: inline-block; }
 
 textarea { display: block; width: 100%; margin: 1rem auto; padding: 0.8rem 1rem; border: 1px solid #e3e3e3; border-radius: 5px; color: rgba(51, 51, 51, 0.7); font-size: 100%; resize: vertical; min-height: 200px; transition: 0.3s ease-out; }
 
-textarea:focus { border: 1px solid #b0b0b0; outline-width: 0; }
+textarea:focus, textarea:hover { border: 1px solid #b0b0b0; outline-width: 0; }
 
 select { -webkit-appearance: none; -moz-appearance: none; appearance: none; display: block; background-color: #fff; padding: 0.8rem 1rem; border: 1px solid #e3e3e3; border-radius: 5px; position: relative; color: rgba(51, 51, 51, 0.7); font-size: 100%; width: 100%; transition: 0.3s ease-out; }
 
@@ -547,7 +555,7 @@ form input .date:last-of-type::before { font-family: 'Glyphter'; content: '\0048
 
 form input .date:last-of-type::after { font-family: 'Glyphter'; content: '\0048'; margin-left: 10px; cursor: initial; }
 
-form input:focus { border: 0px solid black; outline-width: 0; }
+form input:focus, form input:hover { border: 0px solid black; outline-width: 0; }
 
 form input[type='date']::-webkit-inner-spin-button { display: none; }
 
@@ -563,7 +571,7 @@ form.fluid { width: 100%; display: block; }
 
 .form-group-secondary input.form-input { margin: 1rem 10px; padding: 0.8rem 1rem; border: 1px solid #e3e3e3; border-radius: 5px; position: relative; color: rgba(51, 51, 51, 0.7); font-size: 100%; width: 70%; display: inline-block; transition: 0.3s ease-out; }
 
-.form-group-secondary input.form-input:focus { border: 1px solid #b0b0b0; outline-width: 0; }
+.form-group-secondary input.form-input:focus, .form-group-secondary input.form-input:hover { border: 1px solid #b0b0b0; outline-width: 0; }
 
 .form-group-secondary label { color: #979797; display: inline-block; width: 20% !important; }
 
@@ -573,7 +581,7 @@ label.checkbox { display: -ms-flexbox; display: flex; padding: 1rem 1rem; -ms-fl
 
 label.checkbox:hover { background-color: rgba(86, 129, 159, 0.1); cursor: pointer; color: #212121; }
 
-label.checkbox:hover::after { font-family: 'Glyphter'; position: absolute; right: 0; font-size: 80%; color: #56819F; margin-right: 1.5rem; content: '\0059'; }
+label.checkbox:hover::after { font-family: 'Glyphter'; position: absolute; right: 0; font-size: 80%; color: #56819f; margin-right: 1.5rem; content: '\0059'; }
 
 input[type='checkbox'] { position: absolute; margin: 0; width: 14px; height: 14px; opacity: 0; }
 
@@ -599,7 +607,7 @@ input[type='checkbox']:checked + .icon::after { font-family: 'Glyphter'; positio
 
 .input-range input[type='range']::-webkit-slider-thumb, .input-range input[type='range']::-moz-range-thumb, .input-range input[type='range']::-ms-thumb { -webkit-appearance: none; border: 1px solid #000000; height: 36px; width: 16px; border-radius: 3px; background: #ffffff; cursor: pointer; margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */ box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
 
-.input-range input[type='range']::-webkit-slider-runnable-track, .input-range input[type='range']::-moz-range-track { width: 100%; height: 8.4px; cursor: pointer; box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; background: #3071a9; border-radius: 1.3px; border: 0.2px solid #010101; }
+.input-range input[type='range']::-webkit-slider-runnable-track, .input-range input[type='range']::-moz-range-track { width: 100%; height: 8.4px; cursor: pointer; box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; background: #3071a9; border: 0.2px solid #010101; border-radius: 1.3px; }
 
 .input-range input[type='range']::-ms-track { width: 100%; height: 8.4px; cursor: pointer; background: transparent; border-color: transparent; border-width: 16px 0; color: transparent; }
 
@@ -616,7 +624,7 @@ input[type='checkbox']:checked + .icon::after { font-family: 'Glyphter'; positio
   .form-group-secondary label { width: 100%; display: block; }
   form { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-direction: column; flex-direction: column; }
   form input, form input.form-input { display: block; border: 1px solid #e3e3e3; margin: 0.5rem 0; padding: 0.5rem 0.5rem; }
-  form input:last-child { border-right: 1px solid #e3e3e3; display: block; border: 1px solid #e3e3e3; margin: 0.5rem 0; padding: 0.5rem 0.5rem; }
+  form input:last-child { border: 1px solid #e3e3e3; border-right: 1px solid #e3e3e3; display: block; margin: 0.5rem 0; padding: 0.5rem 0.5rem; }
   form input:last-child:after { font-family: 'Glyphter'; content: ''; margin-left: 10px; cursor: initial; display: none; } }
 
 @media (max-width: 576px) { .form-group-secondary { width: 100%; padding: 2rem 1rem; }
@@ -676,7 +684,7 @@ img { width: 100%; max-width: 100%; height: auto; }
 
 .pagination-prev, .pagination-next { color: #979797; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; font-weight: 700; }
 
-.pagination-page { color: #56819F; }
+.pagination-page { color: #56819f; }
 
 .pagination-page.active { color: #979797; background-color: #f5f5f2; }
 
@@ -811,4 +819,3 @@ img { width: 100%; max-width: 100%; height: auto; }
 .datepicker.dropdown-menu { position: absolute; top: 100%; left: 0; z-index: 1000; float: left; display: none; min-width: 160px; list-style: none; background-color: #fff; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 5px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); background-clip: padding-box; *border-right-width: 2px; *border-bottom-width: 2px; color: #333333; font-size: 13px; line-height: 20px; }
 
 .datepicker.dropdown-menu th, .datepicker.datepicker-inline th, .datepicker.dropdown-menu td, .datepicker.datepicker-inline td { padding: 4px 5px; }
-body { background-color: #f5f5f2; font-family: "Roboto", sans-serif; }

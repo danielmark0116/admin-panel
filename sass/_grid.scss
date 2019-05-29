@@ -47,7 +47,7 @@
   padding: 0 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $breakpoint-xl) {
   @for $i from 1 through $flex-columns {
     .#{col}-#{$i} {
       $width: 100% / $flex-columns * $i;
@@ -57,7 +57,7 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1199px) {
+@media (min-width: ($breakpoint-medium + 1)) and (max-width: ($breakpoint-xl - 1)) {
   @for $i from 1 through $flex-columns {
     .#{col}-#{m}-#{$i} {
       $width: 100% / $flex-columns * $i;
@@ -67,7 +67,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-medium) {
   @for $i from 1 through $flex-columns {
     .#{col}-#{s}-#{$i} {
       $width: 100% / $flex-columns * $i;
@@ -77,7 +77,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-medium) {
   .d-flex {
     flex-direction: column;
   }

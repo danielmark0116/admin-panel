@@ -1,5 +1,6 @@
 // IMPORTS
 @import 'variables';
+@import 'global';
 @import 'mixins';
 @import 'normalize';
 @import 'grid';
@@ -19,9 +20,3 @@
 
 // DATEPICKER
 @import 'vendor/datepicker';
-
-// GLOBAL SETTINGS
-body {
-  background-color: $bg;
-  font-family: $sans-serif, sans-serif;
-}

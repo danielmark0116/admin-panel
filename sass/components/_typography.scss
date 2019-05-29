@@ -39,7 +39,7 @@ p {
   display: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: $breakpoint-xl) {
   .d-d-none {
     display: block;
   }

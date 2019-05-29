@@ -1,168 +1,167 @@
 #mobile-menu-bar {
-    display: none;
+  display: none;
 }
 
 .side-bar::-webkit-scrollbar {
-    width: 0 !important
+  width: 0 !important;
 }
 
 .side-bar {
-    overflow: -moz-scrollbars-none;
-    -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
 }
 
 .side-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    background-color: $dark;
-    color: white;
-    width: $side-bar-width;
-    overflow-y: scroll;
-    z-index: 5;
-    box-shadow: 2px 0 10px rgba(black, 0.55);
-    border-right: 1px solid black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: $dark;
+  color: white;
+  width: $side-bar-width;
+  overflow-y: scroll;
+  z-index: 5;
+  box-shadow: 2px 0 10px rgba(black, 0.55);
+  border-right: 1px solid black;
+  @include fade;
+
+  &:hover {
+    box-shadow: 2px 0 10px rgba(black, 0.75);
+  }
+
+  &-brand {
+    font-family: $brand-font;
+    width: auto;
+    padding-left: 1rem;
+    font-size: 25px;
+    // padding-left: 1rem;
     @include fade;
 
-    &:hover {
-        box-shadow: 2px 0 10px rgba(black, 0.75);
+    &.hide {
+      visibility: hidden;
     }
+  }
 
-    &-brand {
-        font-family: $brand-font;
-        width: auto;
-        padding-left: 1rem;
-        font-size: 25px;
-        // padding-left: 1rem;
-        @include fade;
+  &-hamburger {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 40px;
+  }
 
-        &.hide {
-            visibility: hidden;
-        }
-    }
+  &-header {
+    padding: 1rem 0;
+    width: 100%;
+    height: $top-bar-height;
+    border-bottom: 0.5px solid $grey;
+    box-shadow: 5px 0 10px rgba(black, 0.25);
+  }
 
-    &-hamburger {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        width: 40px;
-    }
+  &-separator {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0 0;
+    border-bottom: 1px solid $grey;
+  }
 
-    &-header {
-        padding: 1rem 0;
-        width: 100%;
-        height: $top-bar-height;
-        border-bottom: 0.5px solid $grey;
-        box-shadow: 5px 0 10px rgba(black, 0.25);
-    }
+  &.active {
+    left: -($side-bar-closed);
+  }
 
-    &-separator {
-        width: 100%;
-        margin: 1rem 0;
-        padding: 0 0;
-        border-bottom: 1px solid $grey;
-    }
-
-    &.active {
-        left: -($side-bar-closed);
-    }
-
-    &.active .top-bar-menu {
-        display: none;
-    }
+  &.active .top-bar-menu {
+    display: none;
+  }
 }
 
 .top-bar {
-    z-index: 4;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    height: auto;
-    background-color: $white;
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: auto;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid $light-3;
+  box-shadow: 0 0 10px rgba(black, 0.1);
+
+  &-left {
+    flex: 1;
+    font-family: $brand-font;
+    width: auto;
+    padding-left: 1rem;
+    font-size: 25px;
+    display: none;
+  }
+
+  &-right {
+    flex: 1;
     display: flex;
-    align-items: center;
-    border-bottom: 0.5px solid $light-3;
-    box-shadow: 0 0 10px rgba(black, 0.1);
-
-    &-left {
-        flex: 1;
-        font-family: $brand-font;
-        width: auto;
-        padding-left: 1rem;
-        font-size: 25px;
-        display: none;
-    }
-
-    &-right {
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
-        color: black;
-    }
+    justify-content: flex-end;
+    color: black;
+  }
 }
 
 // Disabling TOP RIGHT bar when mobile (less than 1200px)
 // this part goes to the side-bar then - see: resize.js
-@media (max-width: 1200px) {
-    .top-bar-right {
-        display: none;
-    }
+@media (max-width: $breakpoint-xl) {
+  .top-bar-right {
+    display: none;
+  }
 
-    .top-bar {
-        height: $top-bar-height;
-    }
+  .top-bar {
+    height: $top-bar-height;
+  }
 }
 
-
 // Switching the side-bar into mobile mode (max 992px)
-@media (max-width: 992px) {
-    #side-bar {
-        display: none;
+@media (max-width: $breakpoint-large) {
+  #side-bar {
+    display: none;
+  }
+
+  #mobile-menu-bar {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .side-bar {
+    top: 0;
+    width: 100vw;
+    display: block;
+    z-index: 5;
+    left: 0;
+
+    &-header {
+      justify-content: flex-start;
     }
 
-    #mobile-menu-bar {
-        display: none;
-
-        &.active {
-            display: block
-        }
+    &-hamburger {
+      display: none;
     }
 
-    .side-bar {
-        top: 0;
-        width: 100vw;
-        display: block;
-        z-index: 5;
-        left: 0;
-
-        &-header {
-            justify-content: flex-start;
-        }
-
-        &-hamburger {
-            display: none;
-        }
-
-        &.active {
-            top: 0;
-            @include mobile-menu-in;
-            left: 0;
-            display: block;
-        }
-
-        &.active .top-bar-menu {
-            display: block;
-        }
+    &.active {
+      top: 0;
+      @include mobile-menu-in;
+      left: 0;
+      display: block;
     }
 
-    .top-bar {
-        z-index: 4;
-
-        &-left {
-            display: block;
-        }
+    &.active .top-bar-menu {
+      display: block;
     }
+  }
+
+  .top-bar {
+    z-index: 4;
+
+    &-left {
+      display: block;
+    }
+  }
 }
