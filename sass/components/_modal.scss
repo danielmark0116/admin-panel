@@ -1,0 +1,47 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgba($dark, 0.5);
+  overflow: auto;
+  display: none;
+  & .title {
+    margin-right: 40px;
+  }
+
+  &.show {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  &-container {
+    min-width: 200px;
+    max-width: 95%;
+    background-color: $white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba($grey, 0.4);
+    position: relative;
+    &-inner {
+      padding: 1rem 2rem;
+    }
+  }
+  &-close {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    @include fade;
+    &::after {
+      font-family: 'Glyphter';
+      content: '\0049';
+    }
+    &:hover {
+      cursor: pointer;
+      color: $grey;
+      transform: rotate(180deg);
+    }
+  }
+}

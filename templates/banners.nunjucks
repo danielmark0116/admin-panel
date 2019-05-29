@@ -13,7 +13,7 @@
     </div>
     <div class="box-inner">
         <div class="container d-flex justify-content-center">
-            <button class="btn btn-success">+ add new</button>
+            <button class="btn btn-success open-banners">+ add new</button>
         </div>
         <div class="container">
             <div class="scroll-wrapper">
@@ -74,11 +74,70 @@
             </div>
         </div>
         <div class="container d-flex justify-content-center pb-1">
-            <button class="btn btn-success">+ add new</button>
+            <button class="btn btn-success open-banners">+ add new</button>
         </div>
     </div>
 </div>
-
+<div class="modal modal-banners" id="modal-banners">
+    <div class="modal-container">
+        <div class="modal-close js--close-modal"></div>
+        <div class="title">
+            <h1>ADD BANNER</h1>
+        </div>
+        <div class="modal-container-inner">
+            <div class="container">
+                <form class="fluid">
+                    <div class="row">
+                        <div class="col col-4 col-m-4 col-s-12">
+                            <div class="form-group-fluid">
+                                <label for="postback-type">Postback type</label>
+                                <div class="select-wrapper">
+                                    <select name="postback-type" id="postback-type">
+                                        <option value="" selected disabled hidden>S2</option>
+                                        <option value="">Option</option>
+                                        <option value="">Option</option>
+                                        <option value="">Option</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-4 col-m-4 col-s-12">
+                            <div class="form-group-fluid">
+                                <label for="countries">To countries</label>
+                                <div class="select-wrapper">
+                                    <select name="postback-type" id="countries">
+                                        <option value="" selected disabled hidden>Select countries</option>
+                                        <option value="">Option</option>
+                                        <option value="">Option</option>
+                                        <option value="">Option</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-4 col-m-4 col-s-12">
+                            <div class="form-group-fluid">
+                                <label for="send-opt">Sending options</label>
+                                <div class="select-wrapper">
+                                    <select name="postback-type" id="send-opt">
+                                        <option value="" selected disabled hidden>Select</option>
+                                        <option value="">Option</option>
+                                        <option value="">Option</option>
+                                        <option value="">Option</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="container d-flex justify-content-end">
+                <button class="btn btn-primary js--close-modal">Cancel</button>
+                <button class="btn btn-success">Quit</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
 
 
 

@@ -167,7 +167,7 @@
                 </div>
                 
             </a>
-            <a href="/" class="top-bar-menu-item">
+            <a href="/" class="top-bar-menu-item" id="open-login">
                 <div class="top-bar-menu-ico">
                     <div class="icon-profile"></div>
                 </div>
@@ -178,7 +178,7 @@
                     </p>
                 </div>
             </a>
-            <a href="/" class="top-bar-menu-item">
+            <a href="/" class="top-bar-menu-item" id="open-quit">
                 <div class="top-bar-menu-ico">
                     <div class="icon-quit"></div>
                 </div>
@@ -191,6 +191,7 @@
         </div>
     </div>
 </nav>
+
 
 <main class="wrapper" id="wrapper">
     
@@ -307,12 +308,45 @@
 
 
 
+
+    <div class="modal modal-quit" id="modal-quit">
+        <div class="modal-container">
+            <div class="modal-close js--close-modal"></div>
+            <div class="title">
+                <h1>Do you really want to quit?</h1>
+            </div>
+            <div class="modal-container-inner d-flex justify-content-end">
+            
+                <button class="btn btn-primary js--close-modal">Cancel</button>
+                <button class="btn btn-success">Quit</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-login" id="modal-login">
+        <div class="modal-container">
+            <div class="modal-close js--close-modal"></div>
+            <div class="title">
+                <h1>LOGIN</h1>
+            </div>
+            <div class="modal-container-inner">
+                <div class="container">
+                    LOGIN FORM
+                </div>
+                <div class="container d-flex justify-content-end">
+                    <button class="btn btn-primary js--close-modal">Cancel</button>
+                    <button class="btn btn-success">Quit</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 </main>
 
 <script src="js/script.js"></script>
 <script src="js/btn-tab.js"></script>
 <script src="js/resize.js"></script>
 <script src="js/active-page.js"></script>
+<script src="js/modal.js"></script>
 
 </body>
 </html>
