@@ -41,6 +41,11 @@
       color: $white;
     }
 
+    &.active {
+      background-color: $grey;
+      color: $white;
+    }
+
     &:hover .side-bar-ico {
       border-left: 2px solid rgba($orange, 1);
     }

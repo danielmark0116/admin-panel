@@ -34,6 +34,12 @@ document.querySelector('#open-login').addEventListener('click', function(e) {
   openModal('#modal-login');
 });
 
+// CHAT modal - LAYOUT nunjucks
+document.querySelector('#open-chat').addEventListener('click', function(e) {
+  // e.preventDefault();
+  openModal('#modal-chat');
+});
+
 // URL modal - LINKs nunjucks
 document.querySelectorAll('.open-links').forEach(function(x) {
   x.addEventListener('click', function(e) {

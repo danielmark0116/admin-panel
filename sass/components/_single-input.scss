@@ -1,0 +1,33 @@
+.single-input {
+  width: 100%;
+  border: 0.5px solid $light-3;
+  align-self: center;
+  height: 45px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin: 0 0;
+  display: flex;
+  align-items: center;
+  @include fade;
+  &:hover {
+    border-color: $light-1;
+    & input::placeholder {
+      color: $light-1;
+    }
+  }
+  & input {
+    padding: 2px 4px;
+    margin: 0 0;
+    border: none;
+    &::placeholder {
+      @include fade;
+      padding-left: 2px;
+      //   color: $light-3;
+    }
+    &:focus {
+      &::placeholder {
+        color: $light-1;
+      }
+    }
+  }
+}

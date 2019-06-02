@@ -20,6 +20,7 @@
             <div></div>
             <div></div>
         </div>
+        
 <nav class="side-bar" id="mobile-menu-bar"></nav>
 <nav class="side-bar" id="side-bar">
     <div class="side-bar-header d-flex">
@@ -34,6 +35,7 @@
             </div>
         </div>
     </div>
+    
     <ul class="side-bar-menu" id="links">
         <li>
             <div class="side-bar-menu-slide">
@@ -135,6 +137,9 @@
         </li>
     </ul>
     <div class="side-bar-separator"></div>
+    <div id="open-chat">
+            speak with manager
+        </div>
     <div id="input"></div>
 </nav>
 
@@ -269,14 +274,50 @@
     </div>
 </div>
 <div class="modal modal-banners" id="modal-banners">
-    <div class="modal-container">
+    <div class="modal-container wide">
         <div class="modal-close js--close-modal"></div>
         <div class="title">
             <h1>ADD BANNER</h1>
         </div>
-        <div class="modal-container-inner">
-            <div class="container">
-                <form class="fluid">
+        <div class="modal-container-inner mp-reset">
+            <form action="" class="fluid">
+                <div class="py-1 px-1">
+                    <div class="row">
+                        <div class="col col-5 col-m-5 col-s-12">
+                            <div class="form-group-fluid">
+                                <label for="postback-type">Scheme name</label>
+                                <div class="single-input">
+                                <input type="text" placeholder="Name">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col col-5 col-m-5 col-s-12">
+                            <div class="form-group-fluid">
+                                <label for="countries">Compaign</label>
+                                <div class="select-wrapper">
+                                    <select name="postback-type" id="countries">
+                                        <option value="" selected disabled hidden>Select countries</option>
+                                        <option value="">Option</option>
+                                        <option value="">Option</option>
+                                        <option value="">Option</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-2 col-m-2 col-s-12">
+                            <div class="form-group-fluid">
+                                <label for="send-opt">Language</label>
+                                <div class="select-wrapper">
+                                    <select name="postback-type" id="send-opt">
+                                        <option value="" selected disabled hidden>Select</option>
+                                        <option value="">Option</option>
+                                        <option value="">Option</option>
+                                        <option value="">Option</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col col-4 col-m-4 col-s-12">
                             <div class="form-group-fluid">
@@ -318,13 +359,109 @@
                             </div>
                         </div>
                     </div>
-                </form>
-            </div>
-            <div class="container d-flex justify-content-end">
-                <button class="btn btn-primary js--close-modal">Cancel</button>
-                <button class="btn btn-success">Quit</button>
-            </div>
-            
+                </div>
+                <div class="row mt-2">
+                    <div class="col col-6 col-m-6 col-s-12 fluid-border">
+                        <h2>Select banners</h2>
+                        <div class="checkbox-window">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                sendMessage
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                checkNumber
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                callBack
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                noResponse
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                noAnswer
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                noCall
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                callAgain
+                            </label>
+                            
+                        </div>
+                    </div>
+                    <div class="col col-6 col-m-6 col-s-12 fluid-border">
+                        <h2>Select websites</h2>
+                        <div class="checkbox-window">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                sendMessage
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                checkNumber
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                callBack
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                noResponse
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                noAnswer
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                noCall
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                callAgain
+                            </label>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="px-1">
+                    <div class="row">
+                        <div class="d-flex col col-9 col-m-9 col-s-12">
+                        <div class="single-input">
+                            <input type="text" placeholder="Generated link">
+                        </div>
+                        </div>
+                        <div class="col col-2 col-m-2 col-s-12 d-flex justify-content-end">
+                            <button class="btn btn-primary icon-links icon">Copy Link</button>
+                        </div>
+                        <div class="col col-1 col-m-1 col-s-12 d-flex justify-content-end">
+                            <button class="btn btn-success">Quit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>  
+        
         </div>
     </div>
 </div>
@@ -334,7 +471,7 @@
 
 
     <div class="modal modal-quit" id="modal-quit">
-        <div class="modal-container">
+        <div class="modal-container narrow">
             <div class="modal-close js--close-modal"></div>
             <div class="title">
                 <h1>Do you really want to quit?</h1>
@@ -354,23 +491,115 @@
             </div>
             <div class="modal-container-inner">
                 <div class="container">
-                    LOGIN FORM
-                </div>
-                <div class="container d-flex justify-content-end">
-                    <button class="btn btn-primary js--close-modal">Cancel</button>
-                    <button class="btn btn-success">Quit</button>
+
+
+                    <form class="inline-form">
+                        <div class="row">
+                            <div class="d-flex mb-1 col col-4 col-m-12 col-s-12">
+                                <div class="inline-input">
+                                    <div class="icon-login icon"></div>
+                                    <input type="text"placeholder="login">
+                                </div>
+                            </div>
+                            <div class="d-flex mb-1 col col-4 col-m-12 col-s-12">
+                                <div class="inline-input">
+                                    <div class="icon-password icon"></div>
+                                    <input type="text"placeholder="password">
+                                </div>
+                            </div>
+                            <div class="d-flex mb-1 col col-4 col-m-12 col-s-12">
+                                <button class="btn inline btn-small btn-success">Login</button>
+                            </div>
+                        </div>
+                        
+                        
+                    </form>
                 </div>
                 
+                
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-chat" id="modal-chat">
+        <div class="modal-container">
+            <div class="modal-close js--close-modal"></div>
+            <div class="title">
+                <h1>CHAT WITH YOUR PERSONAL MANAGER</h1>
+            </div>
+            <div class="modal-chat-header">
+                <div class="modal-chat-header-pic">
+                    <img src="images/thumbs/manager.png" alt="">
+                </div>
+                <div class="modal-chat-header-content">
+                    <div class="modal-chat-header-title">
+                        Michael E.
+                        <div class="tabs">
+                            <div class="modal-chat-header-tab">
+                                online
+                            </div>
+                            <div class="modal-chat-header-tab offline">
+                                offline
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="modal-container-inner">
+                <div class="modal-chat-box">
+                    <div class="modal-chat-box-received">
+                        <p>
+                            Lorem ipsum dolor sit amet
+                        </p>
+                    </div>
+                    <div class="modal-chat-box-sent">
+                        <p>
+                            Lorem ipsum dolor sit amet, but ipsum is not lorem, isn't it?
+                        </p>
+                    </div>
+                    <div class="modal-chat-box-received">
+                        <p>
+                            Dunno
+                        </p>
+                    </div>
+                    <div class="modal-chat-box-received">
+                        <p>
+                            Probably...
+                        </p>
+                    </div>
+                    <div class="modal-chat-box-sent">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, odit magni voluptatem perferendis qui repellat alias et atque accusantium laborum dolorum deleniti impedit temporibus veritatis praesentium corporis vero corrupti suscipit.
+                        </p>
+                    </div>
+                    <div class="modal-chat-box-received">
+                        <p>
+                            Ok :)
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="modal-chat-input-box">
+                    <form class="fluid">
+                        <div class="chat-input">
+                            <div class="icon-message icon"></div>
+                            <input type="text"placeholder="Enter your message">
+                        </div>
+                        <button class="btn btn-small btn-success">Send</button>
+                    </form>
             </div>
         </div>
     </div>
 </main>
 
+<script src="js/modal.js"></script>
 <script src="js/script.js"></script>
 <script src="js/btn-tab.js"></script>
 <script src="js/resize.js"></script>
 <script src="js/active-page.js"></script>
-<script src="js/modal.js"></script>
+
 
 </body>
 </html>

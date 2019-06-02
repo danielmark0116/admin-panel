@@ -20,6 +20,7 @@
             <div></div>
             <div></div>
         </div>
+        
 <nav class="side-bar" id="mobile-menu-bar"></nav>
 <nav class="side-bar" id="side-bar">
     <div class="side-bar-header d-flex">
@@ -34,6 +35,7 @@
             </div>
         </div>
     </div>
+    
     <ul class="side-bar-menu" id="links">
         <li>
             <div class="side-bar-menu-slide">
@@ -135,6 +137,9 @@
         </li>
     </ul>
     <div class="side-bar-separator"></div>
+    <div id="open-chat">
+            speak with manager
+        </div>
     <div id="input"></div>
 </nav>
 
@@ -404,7 +409,7 @@
 
 
     <div class="modal modal-quit" id="modal-quit">
-        <div class="modal-container">
+        <div class="modal-container narrow">
             <div class="modal-close js--close-modal"></div>
             <div class="title">
                 <h1>Do you really want to quit?</h1>
@@ -424,23 +429,115 @@
             </div>
             <div class="modal-container-inner">
                 <div class="container">
-                    LOGIN FORM
-                </div>
-                <div class="container d-flex justify-content-end">
-                    <button class="btn btn-primary js--close-modal">Cancel</button>
-                    <button class="btn btn-success">Quit</button>
+
+
+                    <form class="inline-form">
+                        <div class="row">
+                            <div class="d-flex mb-1 col col-4 col-m-12 col-s-12">
+                                <div class="inline-input">
+                                    <div class="icon-login icon"></div>
+                                    <input type="text"placeholder="login">
+                                </div>
+                            </div>
+                            <div class="d-flex mb-1 col col-4 col-m-12 col-s-12">
+                                <div class="inline-input">
+                                    <div class="icon-password icon"></div>
+                                    <input type="text"placeholder="password">
+                                </div>
+                            </div>
+                            <div class="d-flex mb-1 col col-4 col-m-12 col-s-12">
+                                <button class="btn inline btn-small btn-success">Login</button>
+                            </div>
+                        </div>
+                        
+                        
+                    </form>
                 </div>
                 
+                
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-chat" id="modal-chat">
+        <div class="modal-container">
+            <div class="modal-close js--close-modal"></div>
+            <div class="title">
+                <h1>CHAT WITH YOUR PERSONAL MANAGER</h1>
+            </div>
+            <div class="modal-chat-header">
+                <div class="modal-chat-header-pic">
+                    <img src="images/thumbs/manager.png" alt="">
+                </div>
+                <div class="modal-chat-header-content">
+                    <div class="modal-chat-header-title">
+                        Michael E.
+                        <div class="tabs">
+                            <div class="modal-chat-header-tab">
+                                online
+                            </div>
+                            <div class="modal-chat-header-tab offline">
+                                offline
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="modal-container-inner">
+                <div class="modal-chat-box">
+                    <div class="modal-chat-box-received">
+                        <p>
+                            Lorem ipsum dolor sit amet
+                        </p>
+                    </div>
+                    <div class="modal-chat-box-sent">
+                        <p>
+                            Lorem ipsum dolor sit amet, but ipsum is not lorem, isn't it?
+                        </p>
+                    </div>
+                    <div class="modal-chat-box-received">
+                        <p>
+                            Dunno
+                        </p>
+                    </div>
+                    <div class="modal-chat-box-received">
+                        <p>
+                            Probably...
+                        </p>
+                    </div>
+                    <div class="modal-chat-box-sent">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, odit magni voluptatem perferendis qui repellat alias et atque accusantium laborum dolorum deleniti impedit temporibus veritatis praesentium corporis vero corrupti suscipit.
+                        </p>
+                    </div>
+                    <div class="modal-chat-box-received">
+                        <p>
+                            Ok :)
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="modal-chat-input-box">
+                    <form class="fluid">
+                        <div class="chat-input">
+                            <div class="icon-message icon"></div>
+                            <input type="text"placeholder="Enter your message">
+                        </div>
+                        <button class="btn btn-small btn-success">Send</button>
+                    </form>
             </div>
         </div>
     </div>
 </main>
 
+<script src="js/modal.js"></script>
 <script src="js/script.js"></script>
 <script src="js/btn-tab.js"></script>
 <script src="js/resize.js"></script>
 <script src="js/active-page.js"></script>
-<script src="js/modal.js"></script>
+
 
 </body>
 </html>

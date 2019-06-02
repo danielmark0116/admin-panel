@@ -49,6 +49,13 @@
   border-radius: 5px;
   margin: 10px 10px;
   @include fade;
+  &.icon {
+    display: flex;
+    &:before {
+      margin-right: 5px;
+      align-self: center;
+    }
+  }
 
   &-primary {
     background-color: $light-2;

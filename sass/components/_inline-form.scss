@@ -1,0 +1,42 @@
+form.inline-form {
+  width: 100%;
+  display: block;
+  align-self: center;
+  & .inline-input {
+    width: 100%;
+    border: 0.5px solid $light-3;
+    padding: 8px 6px;
+    border-radius: 5px;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    & input {
+      padding-left: 5px;
+      &::placeholder {
+        color: $light-2;
+      }
+    }
+    & .icon {
+      height: max-content;
+      color: $light-3;
+      margin-right: 5px;
+    }
+  }
+  & button.inline {
+    width: 100%;
+    display: block;
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: $breakpoint-large) {
+  form.inline-form {
+    & .inline-input {
+      & input {
+        border: none !important;
+        padding: 0 0;
+        margin: 0 0;
+      }
+    }
+  }
+}

@@ -95,6 +95,7 @@ main.wrapper {
     padding-right: 1rem * $i;
   }
   .#{py}-#{$i} {
-    padding: (1rem * $i) 0;
+    padding-top: (1rem * $i);
+    padding-bottom: (1rem * $i);
   }
 }

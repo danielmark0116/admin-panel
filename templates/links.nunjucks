@@ -80,31 +80,28 @@
 </div>
 
 <div class="modal modal-links" id="modal-links">
-    <div class="modal-container">
+    <div class="modal-container wide">
         <div class="modal-close js--close-modal"></div>
         <div class="title">
             <h1>ADD URL</h1>
         </div>
-        <div class="modal-container-inner">
-            <div class="container">
+        
+        <div class="modal-container-inner mp-reset">
+            <div class="py-1 px-2">
                 <form class="fluid">
+                    
                     <div class="row">
-                        <div class="col col-4 col-m-4 col-s-12">
+                        <div class="col col-5 col-m-5 col-s-12">
                             <div class="form-group-fluid">
-                                <label for="postback-type">Postback type</label>
-                                <div class="select-wrapper">
-                                    <select name="postback-type" id="postback-type">
-                                        <option value="" selected disabled hidden>S2</option>
-                                        <option value="">Option</option>
-                                        <option value="">Option</option>
-                                        <option value="">Option</option>
-                                    </select>
-                                </div>
+                                <label for="postback-type">Scheme name</label>
+                                <div class="single-input">
+                                <input type="text" placeholder="Name">
+                           </div>
                             </div>
                         </div>
-                        <div class="col col-4 col-m-4 col-s-12">
+                        <div class="col col-5 col-m-5 col-s-12">
                             <div class="form-group-fluid">
-                                <label for="countries">To countries</label>
+                                <label for="countries">Country</label>
                                 <div class="select-wrapper">
                                     <select name="postback-type" id="countries">
                                         <option value="" selected disabled hidden>Select countries</option>
@@ -115,9 +112,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-4 col-m-4 col-s-12">
+                        <div class="col col-2 col-m-2 col-s-12">
                             <div class="form-group-fluid">
-                                <label for="send-opt">Sending options</label>
+                                <label for="send-opt">Language</label>
                                 <div class="select-wrapper">
                                     <select name="postback-type" id="send-opt">
                                         <option value="" selected disabled hidden>Select</option>
@@ -129,14 +126,116 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="separator"></div>
+                <div class="py-1 px-2">
+            
+                    
+            
+                    <h2>Select websites</h2>
+                    <div class="row overflow">
+                    
+                        <div class="col col-4 col-m-4 col-s-12">
+                            
+                            
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                sendMessage
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                checkNumber
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                sendMessage
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                checkNumber
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                sendMessage
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                checkNumber
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                sendMessage
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                checkNumber
+                            </label>
+                            
+                            
+                                
+                                
+                        </div>
+                        <div class="col col-4 col-m-4 col-s-12">
+                        
+                        
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <div class="icon"></div>
+                            sendMessage
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <div class="icon"></div>
+                            checkNumber
+                        </label>
+                        
+                            
+                            
+                        </div>
+                        <div class="col col-4 col-m-4 col-s-12">
+                        
+                        
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                sendMessage
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div class="icon"></div>
+                                checkNumber
+                            </label>    
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="separator"></div>
+                <div class="py-1 px-2">
+            
+                    <div class="row">
+                        <div class="d-flex col col-11 col-m-11 col-s-12">
+                           <div class="single-input">
+                                <input type="text" placeholder="Generated link">
+                           </div>
+                        </div>
+                        <div class="col col-1 col-m-1 col-s-12 d-flex justify-content-end">
+                            <button class="btn btn-success">Quit</button>
+                        </div>
+                    </div>
+
+                
                 </form>
             </div>
-            <div class="container d-flex justify-content-end">
-                <button class="btn btn-primary js--close-modal">Cancel</button>
-                <button class="btn btn-success">Quit</button>
-            </div>
-            
         </div>
+
     </div>
 </div>
 

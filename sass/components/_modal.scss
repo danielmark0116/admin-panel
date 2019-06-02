@@ -8,6 +8,14 @@
   background-color: rgba($dark, 0.5);
   overflow: auto;
   display: none;
+  & .overflow {
+    overflow: scroll;
+    max-height: 280px;
+  }
+  & .form-group-fluid {
+    padding: 5px 10px;
+  }
+
   & .title {
     margin-right: 40px;
   }
@@ -19,12 +27,18 @@
     align-items: center;
   }
   &-container {
-    min-width: 200px;
+    min-width: 700px;
     max-width: 95%;
+    max-height: 800px;
     background-color: $white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba($grey, 0.4);
     position: relative;
+
+    &.wide {
+      min-width: 80%;
+    }
+
     &-inner {
       padding: 1rem 2rem;
     }
@@ -43,5 +57,11 @@
       color: $grey;
       transform: rotate(180deg);
     }
+  }
+}
+
+@media (max-width: $breakpoint-medium) {
+  .modal-container {
+    min-width: 95%;
   }
 }
