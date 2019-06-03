@@ -104,6 +104,45 @@
   }
 }
 
+.chat-menu-item {
+  & .side-bar-ico.online-status {
+    @include fade;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      box-shadow: 0 0 10px $grey;
+      top: 8px;
+      right: 8px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $blue;
+    }
+    &.online {
+      &::before {
+        background-color: $green;
+      }
+    }
+    &.offline {
+      &::before {
+        background-color: lighten($grey, 20);
+      }
+    }
+  }
+  & .p-slide {
+    margin-left: 10px;
+  }
+  & img {
+    max-height: 75%;
+    width: auto;
+    align-self: center;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 // Disabling TOP RIGHT bar when mobile (less than 1200px)
 // this part goes to the side-bar then - see: resize.js
 @media (max-width: $breakpoint-xl) {
@@ -120,6 +159,7 @@
 @media (max-width: $breakpoint-large) {
   #side-bar {
     display: none;
+    z-index: -2;
   }
 
   #mobile-menu-bar {

@@ -25,6 +25,14 @@ h2 {
   & span.red {
     color: red;
   }
+  &.side-bar-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-left: 10px;
+    &.hide {
+      display: none;
+    }
+  }
 }
 
 // TEXT

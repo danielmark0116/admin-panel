@@ -16,6 +16,8 @@
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
+    "build:nuncjuks": "gulp nunjucks",
+    "build:dist": "copyfiles *.html css/* images/* images/charts/* images/icons/* images/thumbs/* js/* vendor/* vendor/fonts/* *.ico dist",
     "watch": "npm run build && npm-run-all -p watch:*",
     "watch:browser-sync": "browser-sync start -w -s",
     "watch:sassprefixer": "onchange sass -- npm-run-all -s onchange:*",
@@ -37,5 +39,8 @@
     "nu-html-checker": "^0.1.0",
     "onchange": "^5.2.0",
     "rimraf": "^2.6.3"
+  },
+  "dependencies": {
+    "copyfiles": "^2.1.0"
   }
 }

@@ -8,7 +8,7 @@
 <nav class="side-bar" id="side-bar">
     <div class="side-bar-header d-flex">
         <div class="side-bar-brand flex-item-2 d-flex">
-            <a href="/">Just Do it</a>
+            <a href="index.html">Just Do it</a>
         </div>
         <div class="side-bar-hamburger flex-item d-flex justify-content-center align-center">
             <div class="hamburger-ico" id="menu-btn">
@@ -22,7 +22,7 @@
     <ul class="side-bar-menu" id="links">
         <li>
             <div class="side-bar-menu-slide">
-                <a href="/" class="side-bar-menu-item">
+                <a href="index.html" class="side-bar-menu-item">
                     <div class="side-bar-ico">
                         <div class="icon-general"></div>
                     </div>
@@ -120,9 +120,28 @@
         </li>
     </ul>
     <div class="side-bar-separator"></div>
-    <div id="open-chat">
-            speak with manager
+    <ul class="side-bar-menu">
+    <h2 class="side-bar-title">
+        Your manager
+    </h2>
+        <div class="open-chat">
+            <li class="chat-menu-item">
+                <div class="side-bar-menu-slide">
+                    <div class="side-bar-menu-item">
+                        <div class="side-bar-ico online-status online">
+                            <img src="images/thumbs/manager.png" alt="">
+                        </div>
+                        <div class="p-slide">
+                            <p>
+                                John Doe
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
         </div>
+    </ul>
+    <div class="side-bar-separator"></div>
     <div id="input"></div>
 </nav>
 
@@ -155,7 +174,7 @@
                 </div>
                 
             </a>
-            <a href="/" class="top-bar-menu-item" id="open-login">
+            <a href="#" class="top-bar-menu-item open-login">
                 <div class="top-bar-menu-ico">
                     <div class="icon-profile"></div>
                 </div>
@@ -166,7 +185,7 @@
                     </p>
                 </div>
             </a>
-            <a href="/" class="top-bar-menu-item" id="open-quit">
+            <a href="#" class="top-bar-menu-item open-quit">
                 <div class="top-bar-menu-ico">
                     <div class="icon-quit"></div>
                 </div>

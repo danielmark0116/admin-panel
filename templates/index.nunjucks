@@ -50,7 +50,8 @@
             <button class="btn btn-tab green">Ipsum</button>
         </div>
         <div class="container">
-            <img src="images/charts/chart-large.png" alt="bar" srcset="/images/charts/chart-large.png 2000w, /images/charts/chart.png 800w"/>
+            {# <img src="images/charts/chart-large.png" alt="bar" srcset="/images/charts/chart-large.png 2000w, /images/charts/chart.png 800w"/> #}
+            <canvas id="myChart"></canvas>
 
         </div>
     </div>
